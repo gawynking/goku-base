@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 把对象的创建交给spring来管理 -->
+    <!-- spring对bean的管理细节
+        1.创建bean的三种方式
+        2.bean对象的作用范围
+        3.bean对象的生命周期
+    -->
+
+    <!-- 创建Bean的三种方式 -->
+    <!-- 第一种方式：使用默认构造函数创建。
+            在spring的配置文件中使用bean标签，配以id和class属性之后，且没有其他属性和标签时。
+            采用的就是默认构造函数创建bean对象，此时如果类中没有默认构造函数，则对象无法创建。
+    -->
+    <!--<bean id="deptService" class="com.pgman.goku.service.impl.DeptServiceXmlImpl"></bean>-->
+
+
+    <!-- 第二种方式： 使用普通工厂中的方法创建对象（使用某个类中的方法创建对象，并存入spring容器）-->
+    <!--<bean id="instanceFactory" class="com.pgman.goku.factory.InstanceFactory"></bean>-->
+    <!--<bean id="deptService" factory-bean="instanceFactory" factory-method="getDeptService"></bean>-->
+
+
+    <!-- 第三种方式：使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象，并存入spring容器) -->
+    <!--<bean id="deptService" class="com.pgman.goku.factory.StaticFactory" factory-method="getDeptService"></bean>-->
+
+
+    <!-- bean的作用范围调整
+    bean标签的scope属性：
+        作用：用于指定bean的作用范围
+        取值： 常用的就是单例的和多例的
+            singleton：单例的（默认值）
+            prototype：多例的
+            request：作用于web应用的请求范围
+            session：作用于web应用的会话范围
+            global-session：作用于集群环境的会话范围（全局会话范围），当不是集群环境时，它就是session
+    -->
+    <!--<bean id="deptService" class="com.pgman.goku.service.impl.DeptServiceXmlImpl" scope="singleton"></bean>-->
+
+    <!-- bean对象的生命周期
+           单例对象
+               出生：当容器创建时对象出生
+               活着：只要容器还在，对象一直活着
+               死亡：容器销毁，对象消亡
+               总结：单例对象的生命周期和容器相同
+           多例对象
+               出生：当我们使用对象时spring框架为我们创建
+               活着：对象只要是在使用过程中就一直活着。
+               死亡：当对象长时间不用，且没有别的对象引用时，由Java的垃圾回收器回收
+    -->
+    <!--<bean id="deptService" class="com.pgman.goku.service.impl.DeptServiceXmlImpl" scope="singleton" init-method="init" destroy-method="destroy"></bean>-->
+
+
+    <!-- spring中的依赖注入
+    依赖注入：
+        Dependency Injection
+    IOC的作用：
+     降低程序间的耦合（依赖关系）
+    依赖关系的管理：
+        以后都交给spring来维护
+    在当前类需要用到其他类的对象，由spring为我们提供，我们只需要在配置文件中说明
+    依赖关系的维护：
+        就称之为依赖注入。
+     依赖注入：
+        能注入的数据：有三类
+            基本类型和String
+            其他bean类型（在配置文件中或者注解配置过的bean）
+            复杂类型/集合类型
+         注入的方式：有三种
+            第一种：使用构造函数提供
+            第二种：使用set方法提供
+            第三种：使用注解提供
+ -->
+
+
+    <!-- 配置一个日期对象 -->
+    <!--<bean id="now" class="java.util.Date"></bean>-->
+
+    <!--构造函数注入：
+        使用的标签:constructor-arg
+        标签出现的位置：bean标签的内部
+        标签中的属性
+            type：用于指定要注入的数据的数据类型，该数据类型也是构造函数中某个或某些参数的类型
+            index：用于指定要注入的数据给构造函数中指定索引位置的参数赋值。索引的位置是从0开始
+            name：用于指定给构造函数中指定名称的参数赋值                                        常用的
+            =============以上三个用于指定给构造函数中哪个参数赋值===============================
+            value：用于提供基本类型和String类型的数据
+            ref：用于指定其他的bean类型数据。它指的就是在spring的Ioc核心容器中出现过的bean对象
+
+        优势：
+            在获取bean对象时，注入数据是必须的操作，否则对象无法创建成功。
+        弊端：
+            改变了bean对象的实例化方式，使我们在创建对象时，如果用不到这些数据，也必须提供。
+    -->
+    <!--<bean id="diDemo1" class="com.pgman.goku.demodi.DiDemo1">-->
+        <!--<constructor-arg name="name" value="chavin"></constructor-arg>-->
+        <!--<constructor-arg name="age" value="28"></constructor-arg>-->
+        <!--<constructor-arg name="birthday" ref="now"></constructor-arg>-->
+    <!--</bean>-->
+
+
+
+    <!-- set方法注入                更常用的方式
+    涉及的标签：property
+    出现的位置：bean标签的内部
+    标签的属性
+        name：用于指定注入时所调用的set方法名称
+        value：用于提供基本类型和String类型的数据
+        ref：用于指定其他的bean类型数据。它指的就是在spring的Ioc核心容器中出现过的bean对象
+    优势：
+        创建对象时没有明确的限制，可以直接使用默认构造函数
+    弊端：
+        如果有某个成员必须有值，则获取对象是有可能set方法没有执行。
+    -->
+    <!--<bean id="diDemo2" class="com.pgman.goku.demodi.DiDemo2">-->
+        <!--<property name="name" value="pgman"></property>-->
+        <!--<property name="age" value="30"></property>-->
+        <!--<property name="birthday" ref="now"></property>-->
+    <!--</bean>-->
+
+    <!-- 复杂类型的注入/集合类型的注入
+    用于给List结构集合注入的标签：
+        list array set
+    用于个Map结构集合注入的标签:
+        map  props
+    结构相同，标签可以互换
+    -->
+    <!--<bean id="diDemo3" class="com.pgman.goku.demodi.DiDemo3">-->
+        <!--<property name="myStrs">-->
+            <!--<array>-->
+                <!--<value>AAA</value>-->
+                <!--<value>BBB</value>-->
+                <!--<value>CCC</value>-->
+            <!--</array>-->
+        <!--</property>-->
+
+        <!--<property name="myList">-->
+            <!--<list>-->
+                <!--<value>AAA</value>-->
+                <!--<value>BBB</value>-->
+                <!--<value>CCC</value>-->
+            <!--</list>-->
+        <!--</property>-->
+
+        <!--<property name="mySet">-->
+            <!--<set>-->
+                <!--<value>AAA</value>-->
+                <!--<value>BBB</value>-->
+                <!--<value>CCC</value>-->
+            <!--</set>-->
+        <!--</property>-->
+
+        <!--<property name="myMap">-->
+            <!--<map>-->
+                <!--<entry key="key1" value="value1"></entry>-->
+                <!--<entry key="key2">-->
+                    <!--<value>value2</value>-->
+                <!--</entry>-->
+            <!--</map>-->
+        <!--</property>-->
+
+        <!--<property name="myProps">-->
+            <!--<props>-->
+                <!--<prop key="key1">value1</prop>-->
+                <!--<prop key="key2">value2</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!-- 定义类路径 -->
+    <!--<bean id="deptDao" class="com.pgman.goku.dao.impl.DeptDaoXmlImpl"></bean>-->
+    <!--<bean id="deptService" class="com.pgman.goku.service.impl.DeptServiceXmlImpl"></bean>-->
+
+</beans>

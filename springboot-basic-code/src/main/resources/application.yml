@@ -1,0 +1,6 @@
+server:
+  port: 8090
+
+#person:
+#  name: chavin
+#  age: 30

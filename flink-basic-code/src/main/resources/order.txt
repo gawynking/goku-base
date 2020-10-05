@@ -1,0 +1,148 @@
+
+-- 设置时间语义,取值如下 : rowtime | proctime(default)
+set flink.time.characteristic = proctime;
+set flink.job.checkpoint.path.url = hdfs://cdh01:8020/flink/ck002;
+
+
+-- 注册UDF
+create function get_json_object as com.pgman.goku.table.udf.ScalarGetJSONItem;
+create function get_customer_info as com.pgman.goku.table.udf.GetCustomerInfo;
+
+
+
+-- 定义维度表
+create table dim_customer(
+customer_id         string    comment '客户id',
+customer_name       string    comment '客户姓名',
+sex                 string    comment '性别',
+address             string    comment '住址'
+) with (
+'connector.type' = 'jdbc',
+'connector.url' = 'jdbc:mysql://127.0.0.1:3306/test',
+'connector.table' = 'tbl_customer',
+'connector.driver' = 'com.mysql.jdbc.Driver',
+'connector.username' = 'root',
+'connector.password' = 'mysql',
+'connector.read.fetch-size' = '1',
+'connector.write.flush.max-rows' = '1',
+'connector.write.flush.interval' = '1s'
+)
+;
+
+
+-- 定义源表建表语句
+create table tbl_order_source(
+
+json string comment '事件日志',
+systime as proctime()
+
+) with (
+'connector.type' = 'kafka',
+'connector.version' = '0.11',
+'connector.topic' = 'order_topic',
+'connector.properties.zookeeper.connect' = 'test.server:2181',
+'connector.properties.bootstrap.servers' = 'test.server:9092',
+'connector.properties.group.id' = 'table-source-kafka-group1000568091',
+'connector.startup-mode' = 'group-offsets',
+
+'format.type' = 'csv',
+'format.field-delimiter' = '\t'
+)
+;
+
+
+-- 定义目标表建表语句
+create table fact_order_sink(
+customer_id         string    comment '客户id',
+customer_name       string    comment '客户姓名',
+sex                 string    comment '性别',
+address             string    comment '住址',
+order_amt           int       comment '客户下单总金额'
+-- ,PRIMARY KEY(customer_id)
+) with (
+'connector.type' = 'jdbc',
+'connector.url' = 'jdbc:mysql://127.0.0.1:3306/test',
+'connector.table' = 'tbl_order_sink',
+'connector.driver' = 'com.mysql.jdbc.Driver',
+'connector.username' = 'root',
+'connector.password' = 'mysql',
+'connector.read.fetch-size' = '1',
+'connector.write.flush.max-rows' = '1',
+'connector.write.flush.interval' = '1s'
+)
+;
+
+
+-- 定义加工逻辑
+create view tmp_order as
+  select
+
+  get_json_object(t1.json,'$.customer_id') as customer_id,
+  sum(cast(get_json_object(t1.json,'$.order_amt') as int)) as order_amt
+
+  from tbl_order_source t1
+  where get_json_object(t1.json,'$.order_status') = '4'
+  group by get_json_object(t1.json,'$.customer_id')
+;
+
+
+
+create view tmp_order_dtl as
+  select
+
+  get_json_object(t1.json,'$.customer_id') as customer_id,
+  cast(get_json_object(t1.json,'$.order_amt') as int) as order_amt,
+  systime
+
+  from tbl_order_source t1
+  where get_json_object(t1.json,'$.order_status') = '4'
+;
+
+
+-- demo1 ： 普通维表 join
+insert into fact_order_sink on mode upsert(customer_id)
+
+select
+
+t1.customer_id,
+t2.customer_name,
+t2.sex,
+t2.address,
+t1.order_amt
+
+from tmp_order t1
+left join dim_customer t2 on t1.customer_id = t2.customer_id
+;
+
+
+
+-- demo2 ： 表函数UDTF join
+-- insert into fact_order_sink on mode upsert(customer_id)
+-- select
+--
+-- t1.customer_id,
+-- t2.customer_name,
+-- t2.sex,
+-- t2.address,
+-- t1.order_amt
+--
+-- from tmp_order t1
+-- left join lateral table(get_customer_info(t1.customer_id)) as t2(customer_name,sex,address) on true
+-- ;
+
+
+
+-- demo3 ： 普通维表 外连接
+-- insert into fact_order_sink on mode upsert(customer_id)
+--
+-- select
+--
+-- t1.customer_id,
+-- t2.customer_name,
+-- t2.sex,
+-- t2.address,
+-- t1.order_amt
+--
+-- from tmp_order_dtl t1
+-- left join dim_customer t2 on t1.customer_id = t2.customer_id
+-- ;

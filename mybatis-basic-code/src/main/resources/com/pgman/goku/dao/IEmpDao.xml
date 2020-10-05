@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pgman.goku.dao.IEmpDao">
+
+    <resultMap id="empDeptMap" type="com.pgman.goku.domain.Emp">
+        <!-- 多表关联 ： 定义子表信息 -->
+        <id property="empno" column="empno"></id>
+
+        <result property="ename" column="ename"></result>
+        <result property="job" column="job"></result>
+        <result property="mgr" column="mgr"></result>
+        <result property="hiredate" column="hiredate"></result>
+        <result property="sal" column="sal"></result>
+        <result property="comm" column="comm"></result>
+        <result property="deptno" column="deptno"></result>
+
+        <!-- 定义父表信息 -->
+        <association property="dept" column="deptno" javaType="com.pgman.goku.domain.Dept">
+            <id property="deptno" column="deptno"></id>
+            <result property="dname" column="dname"></result>
+            <result property="loc" column="loc"></result>
+        </association>
+
+    </resultMap>
+
+
+    <!-- 延迟加载Map -->
+    <resultMap id="empDeptLazy" type="com.pgman.goku.domain.Emp">
+        <id property="empno" column="empno"></id>
+
+        <result property="ename" column="ename"></result>
+        <result property="job" column="job"></result>
+        <result property="mgr" column="mgr"></result>
+        <result property="hiredate" column="hiredate"></result>
+        <result property="sal" column="sal"></result>
+        <result property="comm" column="comm"></result>
+        <result property="deptno" column="deptno"></result>
+
+        <association property="dept" column="deptno" javaType="dept" select="com.pgman.goku.dao.IDeptDao.findById"></association>
+
+    </resultMap>
+
+    <!-- 开启二级缓存 -->
+    <cache/>
+
+    <!-- 1 配置查询所有 -->
+    <select id="findAll" resultType="com.pgman.goku.domain.Emp">
+        select * from emp
+    </select>
+
+    <!-- 2 查询用户信息 包含部门名称和地址 -->
+    <select id="findEmpContainDept" resultType="com.pgman.goku.domain.EmpContainDept">
+        select
+            e.empno,
+            e.ename,
+            e.job,
+            e.mgr,
+            e.hiredate,
+            e.sal,
+            e.comm,
+            e.deptno,
+            d.dname,
+            d.loc
+        from emp e
+        left join dept d on e.deptno = d.deptno
+    </select>
+
+    <!-- 3 Mybatis方式查询用户信息包含部门信息 -->
+    <select id="findEmpContainDeptMybatis" resultMap="empDeptMap">
+        select
+        e.empno,
+        e.ename,
+        e.job,
+        e.mgr,
+        e.hiredate,
+        e.sal,
+        e.comm,
+        e.deptno,
+        d.dname,
+        d.loc
+        from emp e
+        left join dept d on e.deptno = d.deptno
+    </select>
+
+    <!-- 4 延迟加载 -->
+    <select id="findEmpDeptLazy" resultMap="empDeptLazy">
+        select * from emp
+    </select>
+
+    <!-- 5 按id查询数据 -->
+    <select id="findEmpByDeptno" parameterType="Integer" resultType="emp">
+        select * from emp where deptno = #{deptno}
+    </select>
+
+
+</mapper>

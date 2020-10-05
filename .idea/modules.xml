@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" filepath="$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-basic-code/elasticsearch-basic-code.iml" filepath="$PROJECT_DIR$/elasticsearch-basic-code/elasticsearch-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-basic-code/flink-basic-code.iml" filepath="$PROJECT_DIR$/flink-basic-code/flink-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-basic-code/java-basic-code.iml" filepath="$PROJECT_DIR$/java-basic-code/java-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" filepath="$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" filepath="$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" filepath="$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" filepath="$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" filepath="$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-basic-code/spring-basic-code.iml" filepath="$PROJECT_DIR$/spring-basic-code/spring-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-basic-code/springboot-basic-code.iml" filepath="$PROJECT_DIR$/springboot-basic-code/springboot-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-basic-code/springmvc-basic-code.iml" filepath="$PROJECT_DIR$/springmvc-basic-code/springmvc-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-basic-code/ssm-basic-code.iml" filepath="$PROJECT_DIR$/ssm-basic-code/ssm-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tij4-basic-code/tij4-basic-code.iml" filepath="$PROJECT_DIR$/tij4-basic-code/tij4-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vue-basic-code/vue-basic-code.iml" filepath="$PROJECT_DIR$/vue-basic-code/vue-basic-code.iml" />
+    </modules>
+  </component>
+</project>

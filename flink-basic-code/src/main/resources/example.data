@@ -1,0 +1,42 @@
+# 样例数据 ：
+
+# 客户数据
+{
+  "id": "369",
+  "name": "King",
+  "sex": "男",
+  "birthday": "1990-03-15",
+  "address": "北京",
+  "create_time": "2020-01-01 12:12:12"
+}
+
+
+# 产品数据
+{
+  "id": "123",
+  "name": "postgreSQL内核原理",
+  "price":66,
+  "category": "book",
+  "create_time": "2020-01-01 12:12:12"
+}
+
+
+# 订单数据
+{
+  "id": "123456",
+  "customer_id": "369",
+  "order_amt": 999,
+  "order_status": 4, // 1 下单 2 付款 3 发货 4 确认收货
+  "create_time": "2020-01-01 12:55:55"
+}
+
+
+# 订单明细数据
+{
+  "id": "123456789",
+  "order_id":"123456",
+  "product_id": "123",
+  "product_num": 10,
+  "create_time": "2020-01-01 12:55:55"
+}
+

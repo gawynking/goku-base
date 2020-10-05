@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pgman.goku.dao.IDeptDao">
+
+    <!-- 注意：实体类列名要和xml文件配置的结果集schema保持一致 -->
+    <!-- 配置 查询结果的列名和实体类的属性名的对应关系 -->
+    <resultMap id="deptMap" type="com.pgman.goku.domain.Dept">
+        <id property="deptno" column="deptno"></id>
+        <result property="dname" column="dname"></result>
+        <result property="loc" column="address"></result>
+    </resultMap>
+
+    <resultMap id="deptEmpMap" type="com.pgman.goku.domain.Dept">
+        <id property="deptno" column="deptno"></id>
+        <result property="dname" column="dname"></result>
+        <result property="loc" column="loc"></result>
+
+        <collection property="emps" ofType="com.pgman.goku.domain.Emp">
+            <id property="empno" column="empno"></id>
+
+            <result property="ename" column="ename"></result>
+            <result property="job" column="job"></result>
+            <result property="mgr" column="mgr"></result>
+            <result property="hiredate" column="hiredate"></result>
+            <result property="sal" column="sal"></result>
+            <result property="comm" column="comm"></result>
+            <result property="deptno" column="deptno"></result>
+        </collection>
+    </resultMap>
+
+    <!-- 配置延迟加载 -->
+    <resultMap id="deptEmpLazy" type="com.pgman.goku.domain.Dept">
+        <id property="deptno" column="deptno"></id>
+        <result property="dname" column="dname"></result>
+        <result property="loc" column="loc"></result>
+
+        <collection property="emps" column="deptno" ofType="com.pgman.goku.domain.Emp" select="com.pgman.goku.dao.IEmpDao.findEmpByDeptno"></collection>
+    </resultMap>
+
+    <!-- 开启二级缓存 -->
+    <cache/>
+
+    <!-- sql标签用于抽取重复内容 -->
+    <sql id="defaultDept">
+        select * from dept
+    </sql>
+
+    <!-- 1 查询全部数据,由于Mybatis主配置文件指定了 typeAliases/package 标签，因此resultType可以省略全路径名且resultType结果不区分大小写 -->
+    <select id="findAll" resultType="com.pgman.goku.domain.Dept">
+        select
+            deptno as deptno,
+            dname  as dname,
+            loc    as loc
+        from dept;
+    </select>
+
+    <!--<select id="findAll" resultMap="deptMap">-->
+        <!--select-->
+        <!--deptno as deptno,-->
+        <!--dname  as dname,-->
+        <!--loc    as address-->
+        <!--from dept;-->
+    <!--</select>-->
+
+    <!-- 2 保存数据 -->
+    <insert id="saveDept" parameterType="com.pgman.goku.domain.Dept">
+        <!-- 获取插入数据ID值方法 -->
+        <selectKey keyProperty="deptno" keyColumn="deptno" resultType="Integer" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into dept(deptno,dname,loc)values(#{deptno},#{dname},#{loc});
+    </insert>
+
+    <!-- 3 更新数据 -->
+    <update id="updateDept" parameterType="com.pgman.goku.domain.Dept">
+        update dept set dname=#{dname},loc = #{loc} where deptno = #{deptno};
+    </update>
+
+    <!-- 4 删除数据 -->
+    <delete id="deleteDept" parameterType="java.lang.Integer">
+        delete from dept where deptno = #{deptno};
+    </delete>
+
+    <!-- 5 根据id查询数据,开启二级缓存支持 -->
+    <select id="findById" parameterType="java.lang.Integer" resultType="com.pgman.goku.domain.Dept" useCache="true">
+        select * from dept where deptno = #{deptno};
+    </select>
+
+    <!-- 6 模糊查询 -->
+    <select id="findByName" parameterType="String" resultType="com.pgman.goku.domain.Dept">
+        <!--select * from dept where dname like '%${value}%';-->
+        select * from dept where dname like #{dname};
+    </select>
+
+    <!-- 7 查询总数 -->
+    <select id="findTotal" resultType="Integer">
+        select count(1) from dept;
+    </select>
+
+    <!-- 8 根据实体类包装条件查询数据 -->
+    <select id="findDeptByVo" parameterType="com.pgman.goku.domain.QueryVo" resultType="com.pgman.goku.domain.Dept">
+        select * from dept where dname like #{dept.dname};
+    </select>
+
+    <!-- 9 根据传入参数返回数据 -->
+    <!-- 1) if标签 -->
+    <!--<select id="findDeptByCondition" parameterType="Dept" resultMap="deptMap">-->
+        <!--select *-->
+        <!--from dept-->
+        <!--where 1 = 1-->
+        <!--<if test="dname != null">-->
+            <!--and dname = #{dname}-->
+        <!--</if>-->
+        <!--<if test="loc != null">-->
+            <!--and loc = #{loc}-->
+        <!--</if>-->
+    <!--</select>-->
+
+    <!-- 2) where标签 -->
+    <select id="findDeptByCondition" parameterType="Dept" resultMap="deptMap">
+        select *
+        from dept
+        <where>
+            <if test="dname != null">
+                and dname = #{dname}
+            </if>
+            <if test="loc != null">
+                and loc = #{loc}
+            </if>
+        </where>
+    </select>
+
+    <!-- 10 根据queryvo中提供的id集合，查询数据 -->
+    <select id="findDepts" resultMap="deptMap" parameterType="QueryVo">
+        <!--select * from dept-->
+        <!-- 引用sql标签 -->
+        <include refid="defaultDept"></include>
+        <where>
+            <if test="deptnos != null">
+                <foreach collection="deptnos" open="and deptno in (" close=")" item="deptno" separator=",">
+                    #{deptno}
+                </foreach>
+            </if>
+        </where>
+    </select>
+    
+    <!-- 11 查询部门下所有用户信息 -->
+    <select id="findDeptContainEmps" resultMap="deptEmpMap">
+        select
+            d.deptno,
+            d.dname,
+            d.loc,
+            e.empno,
+            e.ename,
+            e.job,
+            e.mgr,
+            e.hiredate,
+            e.sal,
+            e.comm
+        from dept d
+        left join emp e on d.deptno = e.deptno
+        ;
+    </select>
+
+    <!-- 12 配置延迟加载 -->
+    <select id="findDeptEmpLazy" resultMap="deptEmpLazy">
+        select * from dept
+    </select>
+
+</mapper>

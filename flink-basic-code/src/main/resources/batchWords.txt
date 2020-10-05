@@ -1,0 +1,5 @@
+flink spark clickhouse
+flink pgsql greenplum
+flink spark kafka
+kafka redis pgsql
+greenplum

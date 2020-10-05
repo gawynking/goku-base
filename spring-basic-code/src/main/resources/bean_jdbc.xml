@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="empService" class="com.pgman.goku.example.demojdbc.service.impl.EmpServiceImpl">
+        <property name="empDao" ref="empDao"></property>
+    </bean>
+
+    <bean id="empDao" class="com.pgman.goku.example.demojdbc.dao.impl.EmpDaoImpl">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--配置JdbcTemplate-->
+    <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+        <!--<property name="dataSource" ref="dataSource"></property>-->
+    <!--</bean>-->
+
+    <!-- 配置数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="mysql"></property>
+    </bean>
+</beans>

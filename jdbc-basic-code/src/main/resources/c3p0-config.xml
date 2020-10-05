@@ -1,0 +1,41 @@
+<c3p0-config>
+    <!-- 使用默认的配置读取连接池对象-->
+    <default-config>
+        <!--  连接参数 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/hera?serverTimezone=UTC</property>
+        <property name="user">root</property>
+        <property name="password">mysql</property>
+
+        <!-- 连接池参数 -->
+        <!-- 初始连接数 -->
+        <property name="initialPoolSize">5</property>
+        <!-- 最大连接数 -->
+        <property name="maxPoolSize">10</property>
+        <!-- 最大等待时间 -->
+        <property name="checkoutTimeout">1024</property>
+        <!-- 最大空闲回收时间 -->
+        <property name="maxIdleTime">1024</property>
+    </default-config>
+
+
+    <named-config name="namedPool">
+        <!--  连接参数 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/hera?serverTimezone=UTC</property>
+        <property name="user">root</property>
+        <property name="password">mysql</property>
+
+        <!-- 连接池参数 -->
+        <!-- 初始连接数 -->
+        <property name="initialPoolSize">5</property>
+        <!-- 最大连接数 -->
+        <property name="maxPoolSize">8</property>
+        <!-- 最大等待时间 -->
+        <property name="checkoutTimeout">1024</property>
+        <!-- 最大空闲回收时间 -->
+        <property name="maxIdleTime">1024</property>
+    </named-config>
+
+
+</c3p0-config>

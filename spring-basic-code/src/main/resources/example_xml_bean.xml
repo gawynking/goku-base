@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="proxyAccountService" factory-bean="beanFactory" factory-method="getEmpService"></bean>
+
+    <bean id="beanFactory" class="com.pgman.goku.example.demoxml.factory.BeanFactory">
+        <property name="empService" ref="empService"></property>
+        <property name="transactionManager" ref="transactionManager"></property>
+    </bean>
+
+    <bean id="empService" class="com.pgman.goku.example.demoxml.service.impl.EmpServiceImpl">
+        <property name="empDao" ref="empDao"></property>
+    </bean>
+
+    <bean id="empDao" class="com.pgman.goku.example.demoxml.dao.impl.EmpDaoImpl">
+        <property name="runner" ref="runner"></property>
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+    <bean id="transactionManager" class="com.pgman.goku.example.demoxml.utils.TransactionManager">
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+    <bean id="connectionUtils" class="com.pgman.goku.example.demoxml.utils.ConnectionUtils">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+        <constructor-arg name="ds" ref="dataSource"></constructor-arg>
+    </bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mybatis"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="mysql"></property>
+    </bean>
+
+</beans>

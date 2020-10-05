@@ -1,0 +1,9 @@
+hadoop spark flink
+pgsql oracle mysql
+java python scala
+kafka flume es
+hadoop hdfs yarn
+hive mysql java
+java java sql
+oracle sql scala
+python java scala

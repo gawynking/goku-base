@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/kafka-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/spark-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/java-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/vue-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearch-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/algds-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/jdbc-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

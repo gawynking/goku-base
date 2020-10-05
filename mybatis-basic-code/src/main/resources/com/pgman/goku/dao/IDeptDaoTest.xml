@@ -1,0 +1,12 @@
+<mapper namespace="com.pgman.goku.dao.IDeptDao">
+
+    <!-- 1 查询全部数据,由于Mybatis主配置文件指定了 typeAliases/package 标签，因此resultType可以省略全路径名且resultType结果不区分大小写 -->
+    <select id="findAll" resultType="com.pgman.goku.domain.Dept">
+        select
+            deptno as deptno,
+            dname  as dname,
+            loc    as loc
+        from dept;
+    </select>
+
+</mapper>

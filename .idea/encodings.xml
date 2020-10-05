@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/elasticsearch-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spark-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-basic-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vue-basic-code" charset="UTF-8" />
+  </component>
+</project>
