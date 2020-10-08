@@ -4,8 +4,7 @@ package io; /* Added by Eclipse.py */
 import java.io.*;
 
 public class TestEOF {
-  public static void main(String[] args)
-  throws IOException {
+  public static void main(String[] args) throws IOException {
     DataInputStream in = new DataInputStream(
       new BufferedInputStream(
         new FileInputStream("TestEOF.java")));
