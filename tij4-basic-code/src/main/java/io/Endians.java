@@ -7,6 +7,7 @@ import static net.mindview.util.Print.*;
 
 public class Endians {
   public static void main(String[] args) {
+
     ByteBuffer bb = ByteBuffer.wrap(new byte[12]);
     bb.asCharBuffer().put("abcdef");
     print(Arrays.toString(bb.array()));

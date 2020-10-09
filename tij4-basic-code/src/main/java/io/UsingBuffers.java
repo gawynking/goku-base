@@ -4,6 +4,7 @@ import java.nio.*;
 import static net.mindview.util.Print.*;
 
 public class UsingBuffers {
+
   private static void symmetricScramble(CharBuffer buffer){
     while(buffer.hasRemaining()) {
       buffer.mark();
@@ -13,6 +14,7 @@ public class UsingBuffers {
       buffer.put(c2).put(c1);
     }
   }
+
   public static void main(String[] args) {
     char[] data = "UsingBuffers".toCharArray();
     ByteBuffer bb = ByteBuffer.allocate(data.length * 2);
@@ -24,6 +26,7 @@ public class UsingBuffers {
     symmetricScramble(cb);
     print(cb.rewind());
   }
+
 } /* Output:
 UsingBuffers
 sUniBgfuefsr

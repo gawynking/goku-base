@@ -6,6 +6,7 @@ import java.io.*;
 
 public class FileLocking {
   public static void main(String[] args) throws Exception {
+
     FileOutputStream fos= new FileOutputStream("file.txt");
     FileLock fl = fos.getChannel().tryLock();
     if(fl != null) {

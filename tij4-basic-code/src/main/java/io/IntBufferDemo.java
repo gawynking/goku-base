@@ -4,8 +4,11 @@ package io; /* Added by Eclipse.py */
 import java.nio.*;
 
 public class IntBufferDemo {
+
   private static final int BSIZE = 1024;
+
   public static void main(String[] args) {
+
     ByteBuffer bb = ByteBuffer.allocate(BSIZE);
     IntBuffer ib = bb.asIntBuffer();
     // Store an array of int:

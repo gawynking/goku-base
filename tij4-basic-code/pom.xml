@@ -15,6 +15,14 @@
             <version>0.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/xom/xom -->
+        <dependency>
+            <groupId>xom</groupId>
+            <artifactId>xom</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+
         <!-- 单元测试依赖 -->
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
