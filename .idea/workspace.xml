@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="" />
+    <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/PasswordUtils.java" afterPath="$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/PasswordUtils.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/mybatis-basic-code/target/" />
     <ignored path="$PROJECT_DIR$/kafka-basic-code/target/" />
     <ignored path="$PROJECT_DIR$/spark-basic-code/target/" />
@@ -25,20 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DynamicProxyMixin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/DynamicProxyMixin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,57 +59,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/typeinfo/NullRobot.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/LinkedStack.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/coffee/CoffeeGenerator.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/TupleTest2.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/net/mindview/util/Sets.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/net/mindview/util/ContainerMethodDifferences.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/BankTeller.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/TupleList.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Store.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ErasedTypeEquivalence.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/LostInformation.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ArrayMaker.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ListMaker.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/FilledListMaker.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Erased.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ClassTypeCapture.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericArray2.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericArray.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericArrayWithTypeToken.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ArrayOfGeneric.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ArrayOfGenericReference.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/BasicBounds.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/InheritBounds.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/EpicBattle.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CovariantArrays.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/NonCovariantGenerics.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/AvailableCharSets.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/GetData.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/IntBufferDemo.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/ViewBuffers.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/Endians.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/UsingBuffers.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/LargeMappedFiles.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/FileLocking.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/LockingMappedFiles.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/MappedIO.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/GZIPcompress.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/ZipCompress.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/Worm.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/Blips.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/Blip3.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/Logon.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/SerialCtl.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/MyWorld.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/RecoverCADState.java" />
         <option value="$PROJECT_DIR$/tij4-basic-code/pom.xml" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericsAndCovariance.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Holder.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericWriting.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericReading.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UnboundedWildcards1.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UnboundedWildcards2.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Wildcards.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CaptureConversion.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ByteSet.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/MultipleInterfaceVariants1.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/MultipleInterfaceVariants.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericCast.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ClassCasting.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UseList.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ComparablePet.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/RestrictedComparablePets.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/HijackedInterface.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CuriouslyRecurringGeneric.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/SelfBounding.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CheckedList.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ThrowGenericException.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Mixins.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/decorator/Decoration.java" />
-        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/DynamicProxyMixin.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/PreferencesDemo.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/xml/Person.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/xml/People.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/io/StoreCADState.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumClass.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Spiciness.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/OzWitch.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/SpaceShip.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/TrafficLight.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Burrito.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Reflection.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Meal.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Course.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/SecurityCategory.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Meal2.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumSets.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumMaps.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/ConstantSpecificMethod.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/NotClasses.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/CarWash.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/OverrideConstantSpecific.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/PostOffice.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Input.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/VendingMachine.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo1.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo2.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo4.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo5.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo6.java" />
+        <option value="$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/PasswordUtils.java" />
       </list>
     </option>
   </component>
@@ -171,7 +161,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,24 +195,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goku-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tij4-basic-code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-              <item name="MultipleInterfaceVariants1.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,15 +243,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DynamicProxyMixin">
-    <configuration name="DynamicProxyMixin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.RoShamBo2">
+    <configuration name="ConstantSpecificMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="enumerated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.DynamicProxyMixin" />
+      <option name="MAIN_CLASS_NAME" value="enumerated.ConstantSpecificMethod" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -282,14 +263,14 @@
       <module name="tij4-basic-code" />
       <envs />
     </configuration>
-    <configuration name="Mixins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EnumMaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="enumerated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.Mixins" />
+      <option name="MAIN_CLASS_NAME" value="enumerated.EnumMaps" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -301,14 +282,14 @@
       <module name="tij4-basic-code" />
       <envs />
     </configuration>
-    <configuration name="OrdinaryArguments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="RoShamBo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="enumerated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.OrdinaryArguments" />
+      <option name="MAIN_CLASS_NAME" value="enumerated.RoShamBo1" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,14 +301,14 @@
       <module name="tij4-basic-code" />
       <envs />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="RoShamBo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="enumerated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.Test" />
+      <option name="MAIN_CLASS_NAME" value="enumerated.RoShamBo2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -339,14 +320,14 @@
       <module name="tij4-basic-code" />
       <envs />
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="enumerated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="generics.Test1" />
+      <option name="MAIN_CLASS_NAME" value="enumerated.VendingMachine" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -621,19 +602,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Test1" />
-      <item index="2" class="java.lang.String" itemvalue="Application.OrdinaryArguments" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Mixins" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DynamicProxyMixin" />
+      <item index="0" class="java.lang.String" itemvalue="Application.EnumMaps" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ConstantSpecificMethod" />
+      <item index="2" class="java.lang.String" itemvalue="Application.VendingMachine" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RoShamBo1" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RoShamBo2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.DynamicProxyMixin" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Mixins" />
-        <item index="2" class="java.lang.String" itemvalue="Application.OrdinaryArguments" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Test1" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RoShamBo2" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RoShamBo1" />
+        <item index="2" class="java.lang.String" itemvalue="Application.VendingMachine" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ConstantSpecificMethod" />
+        <item index="4" class="java.lang.String" itemvalue="Application.EnumMaps" />
       </list>
     </recent_temporary>
   </component>
@@ -692,7 +673,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -710,20 +690,20 @@
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21937639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.298441" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17430703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -754,10 +734,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.298441" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21937639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21321961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -778,608 +759,522 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericArray2.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/io/SerialCtl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#230#231#0" expanded="false" />
-            <element signature="e#268#269#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-            <element signature="e#352#382#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#457#487#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-            <element signature="e#570#571#0" expanded="false" />
-            <element signature="e#672#681#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="373">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/BasicBounds.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/io/MyWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding>
-            <element signature="e#199#200#0" expanded="false" />
-            <element signature="e#231#232#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="false" />
-            <element signature="e#277#278#0" expanded="false" />
-            <element signature="e#353#354#0" expanded="false" />
-            <element signature="e#391#392#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#789#790#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#874#875#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#921#922#0" expanded="false" />
-            <element signature="e#939#940#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1239#1240#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1296#1297#0" expanded="false" />
-            <element signature="e#1334#1335#0" expanded="false" />
-            <element signature="e#1352#1353#0" expanded="false" />
-            <element signature="e#1381#1382#0" expanded="false" />
-            <element signature="e#1399#1400#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1495#1496#0" expanded="false" />
-            <element signature="e#1531#1532#0" expanded="false" />
-            <element signature="e#1635#1636#0" expanded="false" />
-            <element signature="e#1662#1663#0" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1713#1714#0" expanded="false" />
-            <element signature="e#1830#1839#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/InheritBounds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-          <folding>
-            <element signature="e#131#132#0" expanded="false" />
-            <element signature="e#163#164#0" expanded="false" />
-            <element signature="e#182#183#0" expanded="false" />
-            <element signature="e#209#210#0" expanded="false" />
-            <element signature="e#292#293#0" expanded="false" />
-            <element signature="e#319#320#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#387#388#0" expanded="false" />
-            <element signature="e#500#501#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#574#575#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#804#805#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#982#991#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/EpicBattle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="89" column="61" lean-forward="true" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="61" />
-          <folding>
-            <element signature="e#471#472#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#529#530#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#690#691#0" expanded="false" />
-            <element signature="e#708#709#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#952#953#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1008#1009#0" expanded="false" />
-            <element signature="e#1221#1222#0" expanded="false" />
-            <element signature="e#1264#1265#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/NonCovariantGenerics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CovariantArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-basic-code/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5015">
-          <caret line="301" column="8" lean-forward="true" selection-start-line="301" selection-start-column="8" selection-end-line="308" selection-end-column="21" />
+        <state relative-caret-position="306">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tij4-basic-code/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CompilerIntelligence.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/io/PreferencesDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericsAndCovariance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="e#673#680#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/SuperTypeWildcards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericWriting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="e#179#180#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#248#255#0" expanded="false" />
-            <element signature="e#301#308#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericReading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#171#172#0" expanded="false" />
-            <element signature="e#205#206#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#795#802#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1228#1235#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UnboundedWildcards1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UnboundedWildcards2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#254#255#0" expanded="false" />
-            <element signature="e#280#281#0" expanded="false" />
-            <element signature="e#322#323#0" expanded="false" />
-            <element signature="e#348#349#0" expanded="false" />
-            <element signature="e#395#396#0" expanded="false" />
-            <element signature="e#421#422#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Holder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          <folding>
-            <element signature="e#172#173#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#256#257#0" expanded="false" />
-            <element signature="e#278#279#0" expanded="false" />
-            <element signature="e#306#307#0" expanded="false" />
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#387#388#0" expanded="false" />
-            <element signature="e#476#483#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Wildcards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding>
-            <element signature="e#2017#2023#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CaptureConversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ListOfInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ByteSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#193#199#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/PrimitiveGenericTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/MultipleInterfaceVariants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#382#383#0" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericCast.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/xml/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#188#189#0" expanded="false" />
-            <element signature="e#224#225#0" expanded="false" />
-            <element signature="e#284#314#0" expanded="false" />
-            <element signature="e#536#544#0" expanded="false" />
-          </folding>
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/NeedCasting.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/xml/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/io/RecoverCADState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/io/StoreCADState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="118" column="47" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/TrafficLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#725#726#0" expanded="false" />
+            <element signature="e#779#780#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/OzWitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#612#613#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#730#731#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Spiciness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Burrito.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#172#173#0" expanded="false" />
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#285#286#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_181/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding>
+            <element signature="e#2036#2037#0" expanded="false" />
+            <element signature="e#2063#2064#0" expanded="false" />
+            <element signature="e#2979#2980#0" expanded="false" />
+            <element signature="e#3009#3010#0" expanded="false" />
+            <element signature="e#4005#4006#0" expanded="false" />
+            <element signature="e#4032#4033#0" expanded="false" />
+            <element signature="e#4357#4358#0" expanded="false" />
+            <element signature="e#4391#4392#0" expanded="false" />
+            <element signature="e#4551#4552#0" expanded="false" />
+            <element signature="e#4590#4591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Reflection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#142#172#0" expanded="false" />
+            <element signature="e#640#648#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ClassCasting.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/SpaceShip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/UpcastEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/TypeOfFood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/SecurityCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding>
-            <element signature="e#144#174#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/UseList.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Meal2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="475">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ComparablePet.java">
+    <entry file="jar://C:/Java/jdk1.8.0_181/src.zip!/java/util/EnumSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding>
-            <element signature="e#203#204#0" expanded="false" />
-          </folding>
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/HijackedInterface.java">
+    <entry file="jar://C:/Java/jdk1.8.0_181/src.zip!/java/util/EnumMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#339#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/RestrictedComparablePets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CuriouslyRecurringGeneric.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/BigEnumSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/AlarmPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumSets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/EnumMaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#342#364#0" expanded="false" />
+            <element signature="e#409#523#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+            <element signature="e#551#667#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Meal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/menu/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#310#311#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/NonEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/ConstantSpecificMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#211#212#0" expanded="false" />
+            <element signature="e#289#290#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#396#397#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#509#510#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/NotClasses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding>
+            <element signature="e#209#210#0" expanded="false" />
+            <element signature="e#251#252#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+            <element signature="e#383#384#0" expanded="false" />
+            <element signature="e#425#426#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/CarWash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#296#297#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+            <element signature="e#414#415#0" expanded="false" />
+            <element signature="e#471#472#0" expanded="false" />
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#696#697#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#913#914#0" expanded="false" />
+            <element signature="e#965#966#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1153#1154#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/OverrideConstantSpecific.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#219#220#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#292#293#0" expanded="false" />
+            <element signature="e#333#334#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/PostOffice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="154" column="5" lean-forward="true" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+            <element signature="e#838#839#0" expanded="false" />
+            <element signature="e#1865#1866#0" expanded="false" />
+            <element signature="e#1927#1928#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2036#2037#0" expanded="false" />
+            <element signature="e#2080#2081#0" expanded="false" />
+            <element signature="e#2188#2189#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/VendingMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Outcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/net/mindview/util/Enums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding>
+            <element signature="e#253#254#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/Competitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-341">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#358#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/enumerated/RoShamBo6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/Testable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/net/mindview/atunit/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/BasicHolder.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/UseCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#196#197#0" expanded="false" />
-            <element signature="e#260#261#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CRGWithBasicHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Unconstrained.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/SelfBounding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#234#235#0" expanded="false" />
-            <element signature="e#264#265#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/NotSelfBounded.java">
+    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/annotations/PasswordUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/SelfBoundingMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="46" />
           <folding>
-            <element signature="e#165#166#0" expanded="false" />
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#269#270#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CovariantReturnTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#365#366#0" expanded="false" />
-            <element signature="e#395#396#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/GenericsAndReturnTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/OrdinaryArguments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#126#127#0" expanded="false" />
-            <element signature="e#182#183#0" expanded="false" />
-            <element signature="e#318#319#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/SelfBoundingAndCovariantArguments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/PlainGenericInheritance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#149#150#0" expanded="false" />
-            <element signature="e#204#205#0" expanded="false" />
-            <element signature="e#282#283#0" expanded="false" />
-            <element signature="e#336#337#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/CheckedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#188#218#0" expanded="false" />
-            <element signature="e#269#270#0" expanded="false" />
-            <element signature="e#312#313#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/ThrowGenericException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#1432#1450#0" expanded="false" />
-            <element signature="e#1744#1763#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Mixins.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/Mixins.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#248#249#0" expanded="false" />
-            <element signature="e#296#297#0" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-            <element signature="e#807#808#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#1118#1119#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#1198#1199#0" expanded="false" />
-            <element signature="e#1251#1252#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/decorator/Decoration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/DogsAndRobots.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/DogsAndRobots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-basic-code/src/main/java/com/pgman/goku/table/sql/SQLWithFileExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/MultipleInterfaceVariants1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tij4-basic-code/src/main/java/generics/DynamicProxyMixin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
           </folding>
         </state>
       </provider>
