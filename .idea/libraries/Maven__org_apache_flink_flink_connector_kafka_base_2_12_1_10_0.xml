@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.flink:flink-connector-kafka-base_2.12:1.10.0">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/apache/flink/flink-connector-kafka-base_2.12/1.10.0/flink-connector-kafka-base_2.12-1.10.0.jar!/" />
+      <root url="jar://D:/repository/maven/org/apache/flink/flink-connector-kafka-base_2.12/1.10.0/flink-connector-kafka-base_2.12-1.10.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/flink/flink-connector-kafka-base_2.12/1.10.0/flink-connector-kafka-base_2.12-1.10.0-javadoc.jar!/" />

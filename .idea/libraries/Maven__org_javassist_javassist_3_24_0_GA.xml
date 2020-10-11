@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.javassist:javassist:3.24.0-GA">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar!/" />
+      <root url="jar://D:/repository/maven/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA-javadoc.jar!/" />

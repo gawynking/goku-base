@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.hadoop:hadoop-annotations:2.8.5">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/apache/hadoop/hadoop-annotations/2.8.5/hadoop-annotations-2.8.5.jar!/" />
+      <root url="jar://D:/repository/maven/org/apache/hadoop/hadoop-annotations/2.8.5/hadoop-annotations-2.8.5.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/hadoop/hadoop-annotations/2.8.5/hadoop-annotations-2.8.5-javadoc.jar!/" />

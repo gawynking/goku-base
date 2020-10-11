@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.codehaus.janino:janino:3.0.11">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/codehaus/janino/janino/3.0.11/janino-3.0.11.jar!/" />
+      <root url="jar://D:/repository/maven/org/codehaus/janino/janino/3.0.11/janino-3.0.11.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/codehaus/janino/janino/3.0.11/janino-3.0.11-javadoc.jar!/" />
