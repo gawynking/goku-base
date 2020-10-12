@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.spark:spark-streaming-flume_2.12:2.4.4">
     <CLASSES>
-      <root url="jar://D:/repository/maven/org/apache/spark/spark-streaming-flume_2.12/2.4.4/spark-streaming-flume_2.12-2.4.4.jar!/" />
+      <root url="jar://D:/Repository/maven/org/apache/spark/spark-streaming-flume_2.12/2.4.4/spark-streaming-flume_2.12-2.4.4.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/spark/spark-streaming-flume_2.12/2.4.4/spark-streaming-flume_2.12-2.4.4-javadoc.jar!/" />

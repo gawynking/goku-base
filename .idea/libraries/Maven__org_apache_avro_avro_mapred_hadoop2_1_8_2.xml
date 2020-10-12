@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.avro:avro-mapred:hadoop2:1.8.2">
     <CLASSES>
-      <root url="jar://D:/repository/maven/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-hadoop2.jar!/" />
+      <root url="jar://D:/Repository/maven/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-hadoop2.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-javadoc.jar!/" />

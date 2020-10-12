@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: javax.servlet:servlet-api:2.5">
     <CLASSES>
-      <root url="jar://D:/repository/maven/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+      <root url="jar://D:/Repository/maven/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar!/" />

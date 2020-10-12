@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.bahir:flink-connector-redis_2.11:1.0">
     <CLASSES>
-      <root url="jar://D:/repository/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/" />
+      <root url="jar://D:/Repository/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-javadoc.jar!/" />

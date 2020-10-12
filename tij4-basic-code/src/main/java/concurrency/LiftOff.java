@@ -11,8 +11,7 @@ public class LiftOff implements Runnable {
     this.countDown = countDown;
   }
   public String status() {
-    return "#" + id + "(" +
-      (countDown > 0 ? countDown : "Liftoff!") + "), ";
+    return "#" + id + "(" + (countDown > 0 ? countDown : "Liftoff!") + "), ";
   }
   public void run() {
     while(countDown-- > 0) {
