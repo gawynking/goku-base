@@ -13,10 +13,21 @@ public class LiftOff implements Runnable {
   public String status() {
     return "#" + id + "(" + (countDown > 0 ? countDown : "Liftoff!") + "), ";
   }
+
+  public int getId(){
+    return id;
+  }
+
   public void run() {
     while(countDown-- > 0) {
       System.out.print(status());
       Thread.yield();
+      try {
+        Thread.sleep(1000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
     }
+    System.out.println();
   }
 } ///:~

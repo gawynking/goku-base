@@ -24,6 +24,11 @@ public class SimpleDaemons implements Runnable {
             daemon.setDaemon(true); // Must call before start()
             daemon.start();
         }
+
+//        Thread daemon = new Thread(new SimpleDaemons());
+//        daemon.start();
+//        daemon.setDaemon(true);
+
         print("All daemons started");
         TimeUnit.MILLISECONDS.sleep(175);
     }

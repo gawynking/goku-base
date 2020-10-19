@@ -16,10 +16,10 @@ class Daemon implements Runnable {
         for (int i = 0; i < t.length; i++) {
             t[i] = new Thread(new DaemonSpawn());
             t[i].start();
-            printnb("DaemonSpawn " + i + " started, ");
+            printnb("DaemonSpawn " + i + " started, \n" );
         }
         for (int i = 0; i < t.length; i++)
-            printnb("t[" + i + "].isDaemon() = " + t[i].isDaemon() + ", ");
+            printnb("t[" + i + "].isDaemon() = " + t[i].isDaemon() + ", \n");
         while (true)
             Thread.yield();
     }
@@ -34,10 +34,11 @@ class DaemonSpawn implements Runnable {
 
 public class Daemons {
     public static void main(String[] args) throws Exception {
+
         Thread d = new Thread(new Daemon());
         d.setDaemon(true);
         d.start();
-        printnb("d.isDaemon() = " + d.isDaemon() + ", ");
+        printnb("d.isDaemon() = " + d.isDaemon() + ", \n");
         // Allow the daemon threads to
         // finish their startup processes:
         TimeUnit.SECONDS.sleep(1);
