@@ -12,7 +12,7 @@ public class SelfManaged implements Runnable {
     }
 
     public String toString() {
-        return Thread.currentThread().getName() + "(" + countDown + "), ";
+        return Thread.currentThread().getName() + "(" + countDown + "), \n";
     }
 
     public void run() {

@@ -128,8 +128,7 @@ class InnerRunnable2 {
             }
 
             public String toString() {
-                return Thread.currentThread().getName() +
-                        ": " + countDown;
+                return Thread.currentThread().getName() + ": " + countDown;
             }
         }, name);
         t.start();
