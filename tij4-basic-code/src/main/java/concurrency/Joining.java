@@ -54,6 +54,8 @@ public class Joining {
                 dopey = new Joiner("Dopey", sleepy),
                 doc = new Joiner("Doc", grumpy);
         grumpy.interrupt();
+        System.out.println("isInterrupted() + " + grumpy.isInterrupted());
+//        doc.interrupt();
     }
 } /* Output:
 Grumpy was interrupted. isInterrupted(): false

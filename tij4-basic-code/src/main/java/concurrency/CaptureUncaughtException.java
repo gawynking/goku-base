@@ -34,6 +34,7 @@ public class CaptureUncaughtException {
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
         exec.execute(new ExceptionThread2());
+        exec.shutdown();
     }
 } /* Output: (90% match)
 HandlerThreadFactory@de6ced creating new Thread
