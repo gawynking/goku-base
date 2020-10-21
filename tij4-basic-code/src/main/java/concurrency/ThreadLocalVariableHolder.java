@@ -22,10 +22,11 @@ class Accessor implements Runnable {
     }
 
     public String toString() {
-        return "#" + id + ": " +
-                ThreadLocalVariableHolder.get();
+        return "#" + id + ": " + ThreadLocalVariableHolder.get();
     }
 }
+
+
 
 public class ThreadLocalVariableHolder {
     private static ThreadLocal<Integer> value =  new ThreadLocal<Integer>() {

@@ -8,7 +8,8 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 import java.util.*;
 
-class Pair { // Not thread-safe
+
+class Pair { // Not thread-safe 非线程安全类型
 
     private int x, y;
 
@@ -54,7 +55,7 @@ class Pair { // Not thread-safe
     }
 }
 
-// Protect a Pair inside a thread-safe class:
+// Protect a Pair inside a thread-safe class: 保护非类型安全类Pair以线程安全的方式应用
 abstract class PairManager {
 
     AtomicInteger checkCounter = new AtomicInteger(0);
@@ -78,7 +79,7 @@ abstract class PairManager {
     public abstract void increment();
 }
 
-// Synchronize the entire method:
+// Synchronize the entire method: 同步方法
 class PairManager1 extends PairManager {
     public synchronized void increment() {
         p.incrementX();
@@ -87,7 +88,7 @@ class PairManager1 extends PairManager {
     }
 }
 
-// Use a critical section:
+// Use a critical section: 同步代码块
 class PairManager2 extends PairManager {
     public void increment() {
         Pair temp;
@@ -126,7 +127,7 @@ class PairChecker implements Runnable {
 
     public void run() {
         while (true) {
-            pm.checkCounter.incrementAndGet();
+            pm.checkCounter.incrementAndGet(); // 更新 checkCounter+1
             pm.getPair().checkState();
         }
     }

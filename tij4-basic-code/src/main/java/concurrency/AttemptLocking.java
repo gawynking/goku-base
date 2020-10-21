@@ -6,7 +6,9 @@ package concurrency; /* Added by Eclipse.py */
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
+
 public class AttemptLocking {
+
     private ReentrantLock lock = new ReentrantLock();
 
     public void untimed() {
@@ -49,10 +51,18 @@ public class AttemptLocking {
                 System.out.println("acquired");
             }
         }.start();
-        Thread.yield(); // Give the 2nd task a chance
+
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//        Thread.yield(); // Give the 2nd task a chance
         al.untimed(); // False -- lock grabbed by task
         al.timed();   // False -- lock grabbed by task
     }
+
 } /* Output:
 tryLock(): true
 tryLock(2, TimeUnit.SECONDS): true

@@ -4,6 +4,7 @@ package concurrency; /* Added by Eclipse.py */
 // when threads are present.
 // {Args: 4}
 
+import java.util.Arrays;
 import java.util.concurrent.*;
 
 // Reuses storage so we don't run out of memory:
@@ -33,10 +34,18 @@ class CircularSet {
             if (array[i] == val) return true;
         return false;
     }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(array);
+    }
+
 }
 
+
 public class SerialNumberChecker {
-    private static final int SIZE = 10;
+
+    private static final int SIZE = 2;
     private static CircularSet serials = new CircularSet(1000);
     private static ExecutorService exec = Executors.newCachedThreadPool();
 
@@ -46,6 +55,7 @@ public class SerialNumberChecker {
                 int serial = SerialNumberGenerator.nextSerialNumber();
                 if (serials.contains(serial)) {
                     System.out.println("Duplicate: " + serial);
+                    System.out.println(serials);
                     System.exit(0);
                 }
                 serials.add(serial);

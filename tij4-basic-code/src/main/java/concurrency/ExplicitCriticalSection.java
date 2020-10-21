@@ -25,8 +25,8 @@ class ExplicitPairManager2 extends PairManager {
     private Lock lock = new ReentrantLock();
 
     public void increment() {
-        Pair temp;
         lock.lock();
+        Pair temp;
         try {
             p.incrementX();
             p.incrementY();
@@ -35,6 +35,7 @@ class ExplicitPairManager2 extends PairManager {
             lock.unlock();
         }
         store(temp);
+
     }
 }
 

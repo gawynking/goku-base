@@ -7,14 +7,14 @@ import static net.mindview.util.Print.*;
 class DualSynch {
     private Object syncObject = new Object();
 
-    public synchronized void f() {
+    public synchronized void f() { // 针对当前对象加锁
         for (int i = 0; i < 5; i++) {
             print("f()");
             Thread.yield();
         }
     }
 
-    public void g() {
+    public void g() { // 针对syncObject对象加锁
         synchronized (syncObject) {
             for (int i = 0; i < 5; i++) {
                 print("g()");
