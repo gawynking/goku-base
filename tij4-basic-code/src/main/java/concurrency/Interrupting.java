@@ -7,7 +7,7 @@ import java.io.*;
 
 import static net.mindview.util.Print.*;
 
-class SleepBlocked implements Runnable {
+class SleepBlocked implements Runnable { // sleep阻塞
     public void run() {
         try {
             TimeUnit.SECONDS.sleep(100);
@@ -18,7 +18,7 @@ class SleepBlocked implements Runnable {
     }
 }
 
-class IOBlocked implements Runnable {
+class IOBlocked implements Runnable { // io阻塞
 
     private InputStream in;
 
@@ -31,7 +31,7 @@ class IOBlocked implements Runnable {
             print("Waiting for read():");
             in.read();
         } catch (IOException e) {
-            if (Thread.currentThread().isInterrupted()) {
+            if (Thread.currentThread().isInterrupted()) { //
                 print("Interrupted from blocked I/O");
             } else {
                 throw new RuntimeException(e);
@@ -41,7 +41,7 @@ class IOBlocked implements Runnable {
     }
 }
 
-class SynchronizedBlocked implements Runnable {
+class SynchronizedBlocked implements Runnable { // 同步阻塞
 
     public synchronized void f() {
         while (true) // Never releases lock
@@ -79,6 +79,7 @@ public class Interrupting {
         test(new SleepBlocked());
         test(new IOBlocked(System.in));
         test(new SynchronizedBlocked());
+
         TimeUnit.SECONDS.sleep(3);
         print("Aborting with System.exit(0)");
         System.exit(0); // ... since last 2 interrupts failed

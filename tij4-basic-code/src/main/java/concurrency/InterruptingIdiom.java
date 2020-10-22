@@ -7,6 +7,10 @@ import java.util.concurrent.*;
 
 import static net.mindview.util.Print.*;
 
+/**
+ * 阻塞时中断
+ * 非阻塞时中断
+ */
 class NeedsCleanup {
 
     private final int id;
@@ -27,16 +31,22 @@ class Blocked3 implements Runnable {
     private volatile double d = 0.0;
 
     public void run() {
-        try {
-            while (!Thread.interrupted()) {
-                // point1
+
+        try { // 1 捕获阻塞中断异常
+            while (!Thread.interrupted()) { // 2 捕获非阻塞场景中断
+
+
+                // point1 阻塞中断
                 NeedsCleanup n1 = new NeedsCleanup(1);
+
                 // Start try-finally immediately after definition
                 // of n1, to guarantee proper cleanup of n1:
                 try {
                     print("Sleeping");
-                    TimeUnit.SECONDS.sleep(1);
-                    // point2
+                    TimeUnit.SECONDS.sleep(1); // 阻塞
+
+
+                    // point2 之后非阻塞中断
                     NeedsCleanup n2 = new NeedsCleanup(2);
                     // Guarantee proper cleanup of n2:
                     try {
@@ -51,11 +61,14 @@ class Blocked3 implements Runnable {
                 } finally {
                     n1.cleanup();
                 }
+
+                System.out.println();
             }
             print("Exiting via while() test");
         } catch (InterruptedException e) {
             print("Exiting via InterruptedException");
         }
+
     }
 
 }
@@ -67,6 +80,7 @@ public class InterruptingIdiom {
             print("usage: java InterruptingIdiom delay-in-mS");
             System.exit(1);
         }
+
         Thread t = new Thread(new Blocked3());
         t.start();
         TimeUnit.MILLISECONDS.sleep(new Integer(args[0]));

@@ -6,6 +6,7 @@ import java.util.*;
 
 import static net.mindview.util.Print.*;
 
+// 计数
 class Count {
     private int count = 0;
     private Random rand = new Random(47);
@@ -23,24 +24,27 @@ class Count {
     }
 }
 
+
 class Entrance implements Runnable {
-    private static Count count = new Count();
-    private static List<Entrance> entrances = new ArrayList<Entrance>();
-    private int number = 0;
+
     // Doesn't need synchronization to read:
     private final int id;
-    private static volatile boolean canceled = false;
+    private int number = 0;
 
-    // Atomic operation on a volatile field:
-    public static void cancel() {
-        canceled = true;
-    }
+    private static Count count = new Count();
+    private static List<Entrance> entrances = new ArrayList<Entrance>();
+    private static volatile boolean canceled = false;
 
     public Entrance(int id) {
         this.id = id;
         // Keep this task in a list. Also prevents
         // garbage collection of dead tasks:
         entrances.add(this);
+    }
+
+    // Atomic operation on a volatile field:
+    public static void cancel() {
+        canceled = true;
     }
 
     public void run() {
@@ -58,7 +62,7 @@ class Entrance implements Runnable {
         print("Stopping " + this);
     }
 
-    public synchronized int getValue() {
+    public synchronized int getValue() { // 记录循环次数
         return number;
     }
 
@@ -84,14 +88,17 @@ public class OrnamentalGarden {
         ExecutorService exec = Executors.newCachedThreadPool();
         for (int i = 0; i < 5; i++)
             exec.execute(new Entrance(i));
+
         // Run for a while, then stop and collect the data:
         TimeUnit.SECONDS.sleep(3);
+
         Entrance.cancel();
         exec.shutdown();
         if (!exec.awaitTermination(250, TimeUnit.MILLISECONDS))
             print("Some tasks were not terminated!");
         print("Total: " + Entrance.getTotalCount());
         print("Sum of Entrances: " + Entrance.sumEntrances());
+
     }
 } /* Output: (Sample)
 Entrance 0: 1 Total: 1

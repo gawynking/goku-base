@@ -24,7 +24,7 @@ public class CloseResource {
         TimeUnit.MILLISECONDS.sleep(100);
 
         print("Shutting down all threads");
-        exec.shutdownNow();
+        exec.shutdownNow(); // 向exec 启动的每一个线程发送 interrupt()请求
 
         TimeUnit.SECONDS.sleep(1);
         print("Closing " + socketInput.getClass().getName());

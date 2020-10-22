@@ -50,6 +50,7 @@ public class NIOInterruption {
 
         exec.shutdown();
         TimeUnit.SECONDS.sleep(1);
+        System.out.println("------------------------------------------------");
 
         // Produce an interrupt via cancel:
         f.cancel(true);
