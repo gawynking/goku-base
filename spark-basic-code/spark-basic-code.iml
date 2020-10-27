@@ -23,7 +23,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="scala-sdk-2.12.10" level="application" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:11.0.2" level="project" />
@@ -218,5 +217,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.25" level="project" />
     <orderEntry type="library" name="Maven: cn.izern:sequence:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.12.10" level="application" />
   </component>
 </module>
