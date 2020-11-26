@@ -40,6 +40,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- springboot整合freemarker -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
         <!--热部署配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -79,6 +85,7 @@
             <artifactId>jquery</artifactId>
             <version>3.3.1</version>
         </dependency>
+
 
     </dependencies>
 
