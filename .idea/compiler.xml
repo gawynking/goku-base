@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="algds-basic-code" />
+        <module name="front-basic-code" />
         <module name="java-basic-code" />
         <module name="jdbc-basic-code" />
         <module name="jpa-basic-code" />
@@ -26,6 +27,7 @@
       <module name="algds-basic-code" target="1.5" />
       <module name="elasticsearch-basic-code" target="1.5" />
       <module name="flink-basic-code" target="1.8" />
+      <module name="front-basic-code" target="1.5" />
       <module name="java-basic-code" target="1.5" />
       <module name="jdbc-basic-code" target="1.6" />
       <module name="jpa-basic-code" target="1.5" />

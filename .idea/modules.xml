@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" filepath="$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/elasticsearch-basic-code/elasticsearch-basic-code.iml" filepath="$PROJECT_DIR$/elasticsearch-basic-code/elasticsearch-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-basic-code/flink-basic-code.iml" filepath="$PROJECT_DIR$/flink-basic-code/flink-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front-basic-code/front-basic-code.iml" filepath="$PROJECT_DIR$/front-basic-code/front-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic-code/java-basic-code.iml" filepath="$PROJECT_DIR$/java-basic-code/java-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" filepath="$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" filepath="$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" />
