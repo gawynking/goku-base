@@ -23,21 +23,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="algds-basic-code" target="1.8" />
-      <module name="elasticsearch-basic-code" target="1.8" />
+      <module name="algds-basic-code" target="1.5" />
+      <module name="elasticsearch-basic-code" target="1.5" />
       <module name="flink-basic-code" target="1.8" />
-      <module name="java-basic-code" target="1.8" />
-      <module name="jdbc-basic-code" target="1.8" />
-      <module name="jpa-basic-code" target="1.8" />
-      <module name="kafka-basic-code" target="1.8" />
-      <module name="mybatis-basic-code" target="1.8" />
+      <module name="java-basic-code" target="1.5" />
+      <module name="jdbc-basic-code" target="1.6" />
+      <module name="jpa-basic-code" target="1.5" />
+      <module name="kafka-basic-code" target="1.5" />
+      <module name="mybatis-basic-code" target="1.5" />
       <module name="spark-basic-code" target="1.8" />
-      <module name="spring-basic-code" target="1.8" />
+      <module name="spring-basic-code" target="1.5" />
       <module name="springboot-basic-code" target="1.8" />
       <module name="springmvc-basic-code" target="1.8" />
       <module name="ssm-basic-code" target="1.8" />
-      <module name="tij4-basic-code" target="1.8" />
-      <module name="vue-basic-code" target="1.8" />
+      <module name="tij4-basic-code" target="1.5" />
+      <module name="vue-basic-code" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
