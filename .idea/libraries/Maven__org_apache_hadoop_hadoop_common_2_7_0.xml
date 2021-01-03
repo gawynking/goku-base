@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.hadoop:hadoop-common:2.7.0">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/apache/hadoop/hadoop-common/2.7.0/hadoop-common-2.7.0.jar!/" />
+      <root url="jar://D:/repository/maven/org/apache/hadoop/hadoop-common/2.7.0/hadoop-common-2.7.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/hadoop/hadoop-common/2.7.0/hadoop-common-2.7.0-javadoc.jar!/" />

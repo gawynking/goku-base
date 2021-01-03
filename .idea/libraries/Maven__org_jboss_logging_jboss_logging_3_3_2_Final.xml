@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/" />
+      <root url="jar://D:/repository/maven/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final-javadoc.jar!/" />
