@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.orc:orc-core:nohive:1.5.5">
     <CLASSES>
-      <root url="jar://D:/repository/maven/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-nohive.jar!/" />
+      <root url="jar://D:/Repository/maven/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-nohive.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-javadoc.jar!/" />
