@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" filepath="$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" filepath="$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-basic-code/netty-basic-code.iml" filepath="$PROJECT_DIR$/netty-basic-code/netty-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-travel-demo/project-travel-demo.iml" filepath="$PROJECT_DIR$/project-travel-demo/project-travel-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" filepath="$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-basic-code/spring-basic-code.iml" filepath="$PROJECT_DIR$/spring-basic-code/spring-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-basic-code/springboot-basic-code.iml" filepath="$PROJECT_DIR$/springboot-basic-code/springboot-basic-code.iml" />

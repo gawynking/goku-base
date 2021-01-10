@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: io.netty:netty:3.7.0.Final">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar!/" />
+      <root url="jar://D:/repository/maven/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/io/netty/netty/3.7.0.Final/netty-3.7.0.Final-javadoc.jar!/" />

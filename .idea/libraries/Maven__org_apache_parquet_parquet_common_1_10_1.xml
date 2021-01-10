@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.parquet:parquet-common:1.10.1">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.jar!/" />
+      <root url="jar://D:/repository/maven/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1-javadoc.jar!/" />

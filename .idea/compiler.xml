@@ -15,6 +15,7 @@
         <module name="kafka-basic-code" />
         <module name="mybatis-basic-code" />
         <module name="netty-basic-code" />
+        <module name="project-travel-demo" />
         <module name="spark-basic-code" />
         <module name="spring-basic-code" />
         <module name="springboot-basic-code" />
@@ -37,6 +38,7 @@
       <module name="kafka-basic-code" target="1.5" />
       <module name="mybatis-basic-code" target="1.5" />
       <module name="netty-basic-code" target="1.5" />
+      <module name="project-travel-demo" target="1.8" />
       <module name="spark-basic-code" target="1.8" />
       <module name="spring-basic-code" target="1.5" />
       <module name="springboot-basic-code" target="1.8" />

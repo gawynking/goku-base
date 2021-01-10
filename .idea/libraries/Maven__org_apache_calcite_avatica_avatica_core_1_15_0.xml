@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.calcite.avatica:avatica-core:1.15.0">
     <CLASSES>
-      <root url="jar://D:/Repository/maven/org/apache/calcite/avatica/avatica-core/1.15.0/avatica-core-1.15.0.jar!/" />
+      <root url="jar://D:/repository/maven/org/apache/calcite/avatica/avatica-core/1.15.0/avatica-core-1.15.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Repository/maven/org/apache/calcite/avatica/avatica-core/1.15.0/avatica-core-1.15.0-javadoc.jar!/" />
