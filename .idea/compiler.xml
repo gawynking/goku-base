@@ -6,24 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algds-basic-code" />
+        <module name="ssm-basic-code" />
+        <module name="springmvc-basic-code" />
         <module name="front-basic-code" />
-        <module name="java-basic-code" />
-        <module name="javaweb-basic-code" />
-        <module name="jdbc-basic-code" />
-        <module name="jpa-basic-code" />
+        <module name="spark-basic-code" />
         <module name="kafka-basic-code" />
-        <module name="mybatis-basic-code" />
+        <module name="vue-basic-code" />
+        <module name="springboot-basic-code" />
+        <module name="java-basic-code" />
+        <module name="spring-basic-code" />
+        <module name="algds-basic-code" />
         <module name="netty-basic-code" />
         <module name="project-travel-demo" />
-        <module name="spark-basic-code" />
-        <module name="spring-basic-code" />
-        <module name="springboot-basic-code" />
-        <module name="springmvc-basic-code" />
-        <module name="ssm-basic-code" />
         <module name="thinkinginjava" />
+        <module name="jpa-basic-code" />
+        <module name="javaweb-basic-code" />
+        <module name="jdbc-basic-code" />
         <module name="tij4-basic-code" />
-        <module name="vue-basic-code" />
+        <module name="mybatis-basic-code" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -47,5 +47,10 @@
       <module name="tij4-basic-code" target="1.5" />
       <module name="vue-basic-code" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-basic-code" options="-parameters" />
+    </option>
   </component>
 </project>
