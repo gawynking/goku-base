@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/javaweb-basic-code" />
+    <file type="web" url="file://$PROJECT_DIR$/project-bms-demo" />
     <file type="web" url="file://$PROJECT_DIR$/project-travel-demo" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc-basic-code" />
     <file type="web" url="file://$PROJECT_DIR$/ssm-basic-code" />
@@ -29,6 +30,7 @@
         <option value="$PROJECT_DIR$/javaweb-basic-code/pom.xml" />
         <option value="$PROJECT_DIR$/netty-basic-code/pom.xml" />
         <option value="$PROJECT_DIR$/project-travel-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/project-bms-demo/pom.xml" />
       </list>
     </option>
   </component>
