@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.typesafe.akka:akka-stream_2.11:2.5.21">
     <CLASSES>
-      <root url="jar://D:/repository/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21.jar!/" />
+      <root url="jar:///opt/data/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/Repository/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21-javadoc.jar!/" />
+      <root url="jar:///opt/data/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/Repository/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21-sources.jar!/" />
+      <root url="jar:///opt/data/maven/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
