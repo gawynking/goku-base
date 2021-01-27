@@ -10,6 +10,7 @@
         <module name="springmvc-basic-code" />
         <module name="front-basic-code" />
         <module name="spark-basic-code" />
+        <module name="hadoop-basic-code" />
         <module name="kafka-basic-code" />
         <module name="vue-basic-code" />
         <module name="springboot-basic-code" />
@@ -32,6 +33,7 @@
       <module name="elasticsearch-basic-code" target="1.5" />
       <module name="flink-basic-code" target="1.8" />
       <module name="front-basic-code" target="1.5" />
+      <module name="hadoop-basic-code" target="8" />
       <module name="java-basic-code" target="1.5" />
       <module name="javaweb-basic-code" target="1.8" />
       <module name="jdbc-basic-code" target="1.6" />

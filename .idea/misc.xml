@@ -31,8 +31,9 @@
         <option value="$PROJECT_DIR$/netty-basic-code/pom.xml" />
         <option value="$PROJECT_DIR$/project-travel-demo/pom.xml" />
         <option value="$PROJECT_DIR$/project-bms-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/hadoop-basic-code/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
