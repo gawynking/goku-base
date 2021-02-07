@@ -340,7 +340,7 @@ public class EventTimeExample {
      * 周期性生成watermark
      *
      * 时间概念：
-     * 1 watermark周期间隔：定义每隔多久计算一次waterMark，默认100ms
+     * 1 watermark周期间隔：定义每隔多久计算一次waterMark，默认200ms
      *      env.getConfig().setAutoWatermarkInterval(200L);
      * 2 watermark最大允许延迟时间：用于计算watermark
      * 3 最大允许延时间隔：用于定义超过watermark多久还可以触发窗口计算，丢失数据可以进入测输出流进行处理
