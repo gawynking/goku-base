@@ -7,7 +7,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
-
+/**
+ * 核心组件：
+ *  Bootstrap ：其实就是启动的意思，主要用来配置 Netty 的相关配置，串联各个组件，针对客户端。
+ *  ServerBootstrap ：同上，只是它是针对服务端。
+ *
+ *
+ */
 public class NettyServer {
 
     public static void main(String[] args){
