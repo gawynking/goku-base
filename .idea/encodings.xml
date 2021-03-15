@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/order/AbsFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/order/BJFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/order/LDFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/order/OrderPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/order/PizzaStore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/pizza/BJCheesePizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/pizza/BJPepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/pizza/LDCheesePizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/pizza/LDPepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/absfactory/pizzastore/pizza/Pizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/order/BJOrderPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/order/LDOrderPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/order/OrderPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/order/PizzaStore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/pizza/BJCheesePizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/pizza/BJPepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/pizza/LDCheesePizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/pizza/LDPepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/factorymethod/pizzastore/pizza/Pizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/order/OrderPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/order/OrderPizza2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/order/PizzaStore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/order/SimpleFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/pizza/CheesePizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/pizza/GreekPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/pizza/PepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory/simplefactory/pizzastore/pizza/Pizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory1/pizzastore/order/PizzaStore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory1/pizzastore/pizza/LDPepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/factory1/pizzastore/pizza/PepperPizza.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type1/SingletonType1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type2/SingletonType2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type3/SingletonType3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type4/SingletonType4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type6/SingletonType6.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type7/SingletonType7.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type8/SingletonType8.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Computer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Moniter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Mouse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Computer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Head.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/IDCard.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Moniter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Mouse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/newfile2.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/Department.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/IDCard.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/PersonDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/PersonServiceBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/DaoSupport.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/PersonServiceBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/PersonService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/PersonServiceBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/newfile.cld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/newfile.cld" charset="GBK" />
     <file url="file://$PROJECT_DIR$/elasticsearch-basic-code" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elasticsearch-basic-code/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elasticsearch-basic-code/src/main/resources" charset="UTF-8" />
