@@ -73,7 +73,7 @@ MVC 模式（MVC Pattern）
 服务定位器模式（Service Locator Pattern）
 传输对象模式（Transfer Object Pattern）
 
-![设计模式结构关系](main/resources/imgs/design_pattern.png)
+![设计模式结构关系](./resources/imgs/design_pattern.png)
 
 
 ---
@@ -213,7 +213,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在 UML 类图中，依赖关系使用带箭头的虚线来表示，箭头从使用类指向被依赖的类。下图 所示是人与手机的关系图，人通过手机的语音传送方法打电话。
 
-![依赖关系示例](main/resources/imgs/uml/dependency.png)
+![依赖关系示例](./resources/imgs/uml/dependency.png)
 
 2) 关联关系
 
@@ -223,7 +223,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在代码中通常将一个类的对象作为另一个类的成员变量来实现关联关系。下图 所示是老师和学生的关系图，每个老师可以教多个学生，每个学生也可向多个老师学，他们是双向关联。
 
-![关联关系示例](main/resources/imgs/uml/association.png)
+![关联关系示例](./resources/imgs/uml/association.png)
 
 3) 聚合关系
 
@@ -233,7 +233,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在 UML 类图中，聚合关系可以用带空心菱形的实线来表示，菱形指向整体。下图 所示是大学和教师的关系图。
 
-![聚合关系示例](main/resources/imgs/uml/aggregation.png)
+![聚合关系示例](./resources/imgs/uml/aggregation.png)
 
 4) 组合关系
 
@@ -243,7 +243,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在 UML 类图中，组合关系用带实心菱形的实线来表示，菱形指向整体。下图 所示是头和嘴的关系图。
 
-![组合关系示例](main/resources/imgs/uml/composition.png)
+![组合关系示例](./resources/imgs/uml/composition.png)
 
 
 5) 泛化关系 
@@ -252,7 +252,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在 UML 类图中，泛化关系用带空心三角箭头的实线来表示，箭头从子类指向父类。在代码实现时，使用面向对象的继承机制来实现泛化关系。例如，Student 类和 Teacher 类都是 Person 类的子类，其类图如下图所示。
 
-![泛化关系示例](main/resources/imgs/uml/generalization.png)
+![泛化关系示例](./resources/imgs/uml/generalization.png)
 
 6) 实现关系 
 
@@ -260,7 +260,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 在 UML 类图中，实现关系使用带空心三角箭头的虚线来表示，箭头从实现类指向接口。例如，汽车和船实现了交通工具，其类图如下图所示。
 
-![实现关系示例](main/resources/imgs/uml/realization.png)
+![实现关系示例](./resources/imgs/uml/realization.png)
 
 
 示例：com.pgman.goku.uml.* 
@@ -350,7 +350,7 @@ UML 从目标系统的不同角度出发，定义了用例图、类图、对象�
 
 SingleObject 类提供了一个静态方法，供外界获取它的静态实例。SingletonPatternDemo 类使用 SingleObject 类来获取 SingleObject 对象。
 
-![单例模式类图](main/resources/imgs/singleton.png)
+![单例模式类图](./resources/imgs/singleton.png)
 
 1、创建一个 Singleton 类。
 
@@ -717,7 +717,7 @@ public class SingletonPatternDemo {
 3) ConcreteBuilder（具体建造者）： 实现接口，构建和装配各个部件。
 4) Director（指挥者）： 构建一个使用Builder接口的对象。它主要是用于创建一个复杂的对象。它主要有两个作用，一是：隔离了客户与对象的生产过程，二是：负责控制产品对象的生产过程。
 
-![建造者模式原理类图](main/resources/imgs/builder_principle.png)
+![建造者模式原理类图](./resources/imgs/builder_principle.png)
 
 ##### 来自菜鸟的一个案例：
 
@@ -727,7 +727,7 @@ public class SingletonPatternDemo {
 
 然后我们创建一个 Meal 类，带有 Item 的 ArrayList 和一个通过结合 Item 来创建不同类型的 Meal 对象的 MealBuilder。BuilderPatternDemo 类使用 MealBuilder 来创建一个 Meal。
 
-![菜鸟网络示例](main/resources/imgs/cn_builder_example.png)
+![菜鸟网络示例](./resources/imgs/cn_builder_example.png)
 
 示例代码：com.pgman.goku.dp23.builder.*
 
@@ -789,7 +789,7 @@ public class SingletonPatternDemo {
 
 AudioPlayer 使用适配器类 MediaAdapter 传递所需的音频类型，不需要知道能播放所需格式音频的实际类。AdapterPatternDemo 类使用 AudioPlayer 类来播放各种格式。
 
-![菜鸟适配器示例](main/resources/imgs/cn_adapter.png)
+![菜鸟适配器示例](./resources/imgs/cn_adapter.png)
 
 示例代码：com.pgman.goku.dp23.adapter.* 
 
@@ -868,13 +868,13 @@ AudioPlayer 使用适配器类 MediaAdapter 传递所需的音频类型，不需
    
 注意事项：对于两个独立变化的维度，使用桥接模式再适合不过了。
 
-![桥接模式原理图](main/resources/imgs/bridge.png)
+![桥接模式原理图](./resources/imgs/bridge.png)
 
 菜鸟示例：
 
 我们有一个作为桥接实现的 DrawAPI 接口和实现了 DrawAPI 接口的实体类 RedCircle、GreenCircle。Shape 是一个抽象类，将使用 DrawAPI 的对象。BridgePatternDemo 类使用 Shape 类来画出不同颜色的圆。
 
-![菜鸟示例类图](main/resources/imgs/cn_bridge.png)
+![菜鸟示例类图](./resources/imgs/cn_bridge.png)
 
 示例代码：com.pgman.goku.dp23.bridge.* 
 
@@ -939,7 +939,7 @@ RedShapeDecorator 是实现了 ShapeDecorator 的实体类。
 
 DecoratorPatternDemo 类使用 RedShapeDecorator 来装饰 Shape 对象。
 
-![菜鸟示例](main/resources/imgs/cn_decorator.png)
+![菜鸟示例](./resources/imgs/cn_decorator.png)
 
 代码：com.pgman.goku.dp23.decorator.* 
 
@@ -981,13 +981,13 @@ DecoratorPatternDemo 类使用 RedShapeDecorator 来装饰 Shape 对象。
 
 注意事项：定义时为具体类。
 
-![组合模式菜鸟示例图](main/resources/imgs/composite2.png)
+![组合模式菜鸟示例图](./resources/imgs/composite2.png)
 
 菜鸟示例：
 
 我们有一个类 Employee，该类被当作组合模型类。CompositePatternDemo 类使用 Employee 类来添加部门层次结构，并打印所有员工。 
 
-![组合模式菜鸟示例图](main/resources/imgs/composite.png)
+![组合模式菜鸟示例图](./resources/imgs/composite.png)
 
 示例代码：com.pgman.goku.dp23.composite.* 
 
@@ -1037,7 +1037,7 @@ DecoratorPatternDemo 类使用 RedShapeDecorator 来装饰 Shape 对象。
 
 ShapeMaker 类使用实体类来代表用户对这些类的调用。FacadePatternDemo 类使用 ShapeMaker 类来显示结果。
 
-![菜鸟示例](main/resources/imgs/cn_facade.png) 
+![菜鸟示例](./resources/imgs/cn_facade.png) 
 
 示例代码：com.pgman.goku.dp23.facade.*
 
@@ -1060,7 +1060,7 @@ ShapeMaker 类使用实体类来代表用户对这些类的调用。FacadePatter
 3) 享元模式能够解决重复对象的内存浪费的问题，当系统中有大量相似对象，需要缓冲池时。不需总是创建新对象，可以从缓冲池里拿。这样可以降低系统内存，同时提高效率
 4) 享元模式经典的应用场景就是池技术了，String常量池、数据库连接池、缓冲池等等都是享元模式的应用，享元模式是池技术的重要实现方式
 
-![享元模式原理图](main/resources/imgs/flyweight_yl.png)
+![享元模式原理图](./resources/imgs/flyweight_yl.png)
 
 ##### 介绍
 
@@ -1102,7 +1102,7 @@ ShapeFactory 有一个 Circle 的 HashMap，其中键名为 Circle 对象的颜�
 
 FlyWeightPatternDemo 类使用 ShapeFactory 来获取 Shape 对象。它将向 ShapeFactory 传递信息（red / green / blue/ black / white），以便获取它所需对象的颜色。
 
-![菜鸟示例](main/resources/imgs/flyweight.png)
+![菜鸟示例](./resources/imgs/flyweight.png)
 
 示例代码：com.pgman.goku.dp23.flyweight.* 
 
@@ -1153,7 +1153,7 @@ FlyWeightPatternDemo 类使用 ShapeFactory 来获取 Shape 对象。它将向 S
 
 ProxyPatternDemo 类使用 ProxyImage 来获取要加载的 Image 对象，并按照需求进行显示。
 
-![菜鸟示例](main/resources/imgs/cn_proxy.png)
+![菜鸟示例](./resources/imgs/cn_proxy.png)
 
 示例代码：com.pgman.goku.dp23.proxy.runoob.* 
 
@@ -1256,7 +1256,7 @@ Cglib代理模式实现步骤
 
 TemplatePatternDemo，我们的演示类使用 Game 来演示模板模式的用法。
 
-![菜鸟示例](main/resources/imgs/cn_template.png)
+![菜鸟示例](./resources/imgs/cn_template.png)
 
 示例代码：com.pgman.goku.dp23.template.* 
 
@@ -1283,7 +1283,7 @@ TemplatePatternDemo，我们的演示类使用 Game 来演示模板模式的用�
 3) 在命名模式中，会将一个请求封装为一个对象，以便使用不同参数来表示不同的请求(即命名)，同时命令模式也支持可撤销的操作。
 4) 通俗易懂的理解：将军发布命令，士兵去执行。其中有几个角色：将军（命令发布者）、士兵（命令的具体执行者）、命令(连接将军和士兵)。Invoker是调用者（将军），Receiver是被调用者（士兵），MyCommand是命令，实现了Command接口，持有接收对象
    
-![命令模式的原理类图](main/resources/imgs/hsp_command.png)
+![命令模式的原理类图](./resources/imgs/hsp_command.png)
 
 说明：
 
@@ -1316,7 +1316,7 @@ TemplatePatternDemo，我们的演示类使用 Game 来演示模板模式的用�
 
 命令模式结构示意图:
 
-![命令模式结构示意图](main/resources/imgs/cn_command.png) 
+![命令模式结构示意图](./resources/imgs/cn_command.png) 
 
 
 ##### 菜鸟示例：
@@ -1325,7 +1325,7 @@ TemplatePatternDemo，我们的演示类使用 Game 来演示模板模式的用�
 
 Broker 对象使用命令模式，基于命令的类型确定哪个对象执行哪个命令。CommandPatternDemo 类使用 Broker 类来演示命令模式。
 
-![菜鸟示例](main/resources/imgs/cn_command_example.png)
+![菜鸟示例](./resources/imgs/cn_command_example.png)
 
 
 ##### 命令模式的注意事项和细节
@@ -1375,7 +1375,7 @@ Broker 对象使用命令模式，基于命令的类型确定哪个对象执行�
 
 VisitorPatternDemo，我们的演示类使用 Computer、ComputerPartVisitor 类来演示访问者模式的用法。
 
-![菜鸟示例](main/resources/imgs/cn_visitor.png)
+![菜鸟示例](./resources/imgs/cn_visitor.png)
 
 示例代码：com.pgman.goku.dp23.visitor.* 
 
@@ -1428,7 +1428,7 @@ VisitorPatternDemo，我们的演示类使用 Computer、ComputerPartVisitor 类
 
 IteratorPatternDemo，我们的演示类使用实体类 NamesRepository 来打印 NamesRepository 中存储为集合的 Names。
 
-![迭代器](main/resources/imgs/cn_iterator.png)
+![迭代器](./resources/imgs/cn_iterator.png)
 
 示例代码：com.pgman.goku.dp23.iterator.* 
 
@@ -1483,7 +1483,7 @@ IteratorPatternDemo，我们的演示类使用实体类 NamesRepository 来打�
 
 ObserverPatternDemo，我们的演示类使用 Subject 和实体类对象来演示观察者模式。
 
-![观察者](main/resources/imgs/cn_observer.png)
+![观察者](./resources/imgs/cn_observer.png)
 
 示例代码：com.pgman.goku.dp23.observer.* 
 
@@ -1526,7 +1526,7 @@ ObserverPatternDemo，我们的演示类使用 Subject 和实体类对象来演�
 
 MediatorPatternDemo，我们的演示类使用 User 对象来显示他们之间的通信。
 
-![菜鸟示例](main/resources/imgs/cn_mediator.png) 
+![菜鸟示例](./resources/imgs/cn_mediator.png) 
 
 示例代码：com.pgman.goku.dp23.mediator.* 
 
@@ -1544,7 +1544,7 @@ MediatorPatternDemo，我们的演示类使用 User 对象来显示他们之间�
 2) 可以这里理解备忘录模式：现实生活中的备忘录是用来记录某些要去做的事情，或者是记录已经达成的共同意见的事情，以防忘记了。而在软件层面，备忘录模式有着相同的含义，备忘录对象主要用来记录一个对象的某种状态，或者某些数据，当要做回退时，可以从备忘录对象里获取原来的数据进行恢复操作
 3) 备忘录模式属于行为型模式
 
-![备忘录模式原理图](main/resources/imgs/memento.png)
+![备忘录模式原理图](./resources/imgs/memento.png)
 
 1) originator : 对象(需要保存状态的对象)
 2) Memento ： 备忘录对象,负责保存好记录，即Originator内部状态
@@ -1580,7 +1580,7 @@ MediatorPatternDemo，我们的演示类使用 User 对象来显示他们之间�
 
 MementoPatternDemo，我们的演示类使用 CareTaker 和 Originator 对象来显示对象的状态恢复。
 
-![备忘录模式](main/resources/imgs/cn_memento.png)
+![备忘录模式](./resources/imgs/cn_memento.png)
 
 示例代码：com.pgman.goku.dp23.memento.* 
 
@@ -1604,7 +1604,7 @@ MementoPatternDemo，我们的演示类使用 CareTaker 和 Originator 对象来
    3. 一个简单语法需要解释的场景
 4) 这样的例子还有，比如编译器、运算表达式计算、正则表达式、机器人等
 
-![解释器的原理类图](main/resources/imgs/interpreter_yllt.png)
+![解释器的原理类图](./resources/imgs/interpreter_yllt.png)
 
 说明：
 
@@ -1643,7 +1643,7 @@ MementoPatternDemo，我们的演示类使用 CareTaker 和 Originator 对象来
 
 InterpreterPatternDemo，我们的演示类使用 Expression 类创建规则和演示表达式的解析。
 
-![解释器示例类图](main/resources/imgs/cn_interpreter.png)
+![解释器示例类图](./resources/imgs/cn_interpreter.png)
 
 示例代码：com.pgman.goku.dp23.interpreter.runoob.* 
 
@@ -1654,7 +1654,7 @@ InterpreterPatternDemo，我们的演示类使用 Expression 类创建规则和�
 2) 在分别输入a ,b, c, d, e 的值
 3) 最后求出结果
 
-![类图](main/resources/imgs/calculator.png)
+![类图](./resources/imgs/calculator.png)
 
 示例代码：com.pgman.goku.dp23.interpreter.calculator.* 
 
@@ -1673,7 +1673,7 @@ InterpreterPatternDemo，我们的演示类使用 Expression 类创建规则和�
 1) 状态模式（State Pattern）：它主要用来解决对象在多种状态转换时，需要对外输出不同的行为的问题。状态和行为是一一对应的，状态之间可以相互转换
 2) 当一个对象的内在状态改变时，允许改变其行为，这个对象看起来像是改变了其类
    
-![状态模式](main/resources/imgs/state_yllt.png) 
+![状态模式](./resources/imgs/state_yllt.png) 
 
 1) Context 类为环境角色, 用于维护State实例,这个实例定义当前状态
 2) State 是抽象状态角色,定义一个接口封装与Context 的一个特点接口相关行为
@@ -1708,7 +1708,7 @@ InterpreterPatternDemo，我们的演示类使用 Expression 类创建规则和�
 
 StatePatternDemo，我们的演示类使用 Context 和状态对象来演示 Context 在状态改变时的行为变化。
 
-![State示例](main/resources/imgs/cn_state.png)
+![State示例](./resources/imgs/cn_state.png)
 
 示例代码：com.pgman.goku.dp23.state.* 
 
@@ -1760,7 +1760,7 @@ StatePatternDemo，我们的演示类使用 Context 和状态对象来演示 Con
 
 StrategyPatternDemo，我们的演示类使用 Context 和策略对象来演示 Context 在它所配置或使用的策略改变时的行为变化。
 
-![菜鸟示例](main/resources/imgs/cn_strategy.png)
+![菜鸟示例](./resources/imgs/cn_strategy.png)
 
 代码示例：com.pgman.goku.dp23.strategy.* 
 
@@ -1810,7 +1810,7 @@ StrategyPatternDemo，我们的演示类使用 Context 和策略对象来演示 
 
 我们创建抽象类 AbstractLogger，带有详细的日志记录级别。然后我们创建三种类型的记录器，都扩展了 AbstractLogger。每个记录器消息的级别是否属于自己的级别，如果是则相应地打印出来，否则将不打印并把消息传给下一个记录器。
 
-![菜鸟示例](main/resources/imgs/cn_chain.png)
+![菜鸟示例](./resources/imgs/cn_chain.png)
 
 代码示例：com.pgman.goku.dp23.responsibilitychain.* 
 
@@ -1833,7 +1833,7 @@ StrategyPatternDemo，我们的演示类使用 Context 和策略对象来演示 
 
 NullPatternDemo，我们的演示类使用 CustomerFactory 来演示空对象模式的用法。
 
-![null](main/resources/imgs/null.png)
+![null](./resources/imgs/null.png)
 
 示例代码：com.pgman.goku.dp23.nullobject.*
 
@@ -1845,7 +1845,7 @@ NullPatternDemo，我们的演示类使用 CustomerFactory 来演示空对象模
 ##### 实现
 我们将创建一个 Person 对象、Criteria 接口和实现了该接口的实体类，来过滤 Person 对象的列表。CriteriaPatternDemo 类使用 Criteria 对象，基于各种标准和它们的结合来过滤 Person 对象的列表。
 
-![过滤器模式](main/resources/imgs/filter.png)
+![过滤器模式](./resources/imgs/filter.png)
 
 
 ### 其他设计模式 
