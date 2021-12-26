@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaweb-basic-code/javaweb-basic-code.iml" filepath="$PROJECT_DIR$/javaweb-basic-code/javaweb-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" filepath="$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" filepath="$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm-basic-code/jvm-basic-code.iml" filepath="$PROJECT_DIR$/jvm-basic-code/jvm-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" filepath="$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" filepath="$PROJECT_DIR$/mybatis-basic-code/mybatis-basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-basic-code/netty-basic-code.iml" filepath="$PROJECT_DIR$/netty-basic-code/netty-basic-code.iml" />

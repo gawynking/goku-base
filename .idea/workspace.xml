@@ -11,61 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/dp-basic-code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/Design Pattern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type1/SingletonType1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type2/SingletonType2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type3/SingletonType3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type4/SingletonType4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type5/SingletonType5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type6/SingletonType6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type7/SingletonType7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23/singleton/type8/SingletonType8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/demeter/Demeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/demeter/improve/Demeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/inversion/DependecyInversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/inversion/improve/DependecyInversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/inversion/improve/DependencyPass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/liskov/Liskov.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/liskov/improve/Liskov.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/ocp/Ocp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/ocp/improve/Ocp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/segregation/Segregation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/segregation/improve/Segregation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/single/SingleResponsibility1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/single/SingleResponsibility2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/principle/single/SingleResponsibility3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Moniter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/aggregation/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Head.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/IDCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Moniter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/composition/newfile2.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/IDCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/PersonServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/dependence/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/DaoSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/PersonServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/generalization/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/PersonServiceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/implementation/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/uml/newfile.cld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dp-basic-code/src/test/java/com/pgman/goku/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_1_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_1_5_3.xml" afterDir="false" />
@@ -660,12 +607,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xom_xom_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xom_xom_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-basic-code/jdbc-basic-code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-basic-code/jpa-basic-code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-travel-demo/project-travel-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-travel-demo/project-travel-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algds-basic-code/algds-basic-code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basic-code/kafka-basic-code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-basic-code/spark-basic-code.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -905,12 +850,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7.15 (C:\Python27\python.exe)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dp-basic-code/src/main/java/com/pgman/goku/dp23" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27011493" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -931,13 +876,24 @@
       <recent name="com.pgman.goku.session" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SingletonType8">
+  <component name="RunManager" selected="Application.SparseArray">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="OdpsPythonConfigurationType" factoryName="MaxCompute Python">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -989,6 +945,79 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.15" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="javaweb-basic-code:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_goku-base" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58830" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="javaweb-basic-code:war exploded" />
+          <artifact name="project-travel-demo:war exploded" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="ccruntests" factoryName="Run Study Tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1122,34 +1151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.netty.inout.MyClient" />
-      <module name="netty-basic-code" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pgman.goku.netty.inout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.netty.inout.MyServer" />
-      <module name="netty-basic-code" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pgman.goku.netty.inout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SingletonType1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pgman.goku.dp23.singleton.type1.SingletonType1" />
       <module name="dp-basic-code" />
@@ -1178,19 +1179,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.dsaa3e.Sort" />
+      <module name="algds-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pgman.goku.dsaa3e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.algs.SparseArray" />
+      <module name="algds-basic-code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pgman.goku.algs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1229,79 +1247,6 @@
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.15" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="javaweb-basic-code:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_goku-base" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58830" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="javaweb-basic-code:war exploded" />
-          <artifact name="project-travel-demo:war exploded" />
-        </option>
       </method>
     </configuration>
     <configuration name="project-travel-demo" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.15" ALTERNATIVE_JRE_ENABLED="false">
@@ -1461,22 +1406,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyServer" />
-      <item itemvalue="Application.MyClient" />
       <item itemvalue="Application.EchoServer" />
-      <item itemvalue="Spring Boot.MySpringBootApplication" />
-      <item itemvalue="Tomcat Server.project-travel-demo" />
-      <item itemvalue="Tomcat Server.tomcat" />
       <item itemvalue="Application.SingletonType1" />
       <item itemvalue="Application.SingletonType8" />
+      <item itemvalue="Application.SparseArray" />
+      <item itemvalue="Application.Sort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparseArray" />
+        <item itemvalue="Application.Sort" />
         <item itemvalue="Application.SingletonType8" />
         <item itemvalue="Application.SingletonType1" />
         <item itemvalue="Application.EchoServer" />
-        <item itemvalue="Application.MyClient" />
-        <item itemvalue="Application.MyServer" />
       </list>
     </recent_temporary>
   </component>

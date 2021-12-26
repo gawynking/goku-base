@@ -14,6 +14,7 @@
         <module name="kafka-basic-code" />
         <module name="vue-basic-code" />
         <module name="springboot-basic-code" />
+        <module name="jvm-basic-code" />
         <module name="java-basic-code" />
         <module name="spring-basic-code" />
         <module name="algds-basic-code" />
@@ -30,7 +31,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="algds-basic-code" target="1.5" />
+      <module name="algds-basic-code" target="7" />
       <module name="dp-basic-code" target="8" />
       <module name="elasticsearch-basic-code" target="1.5" />
       <module name="flink-basic-code" target="1.8" />
@@ -40,6 +41,7 @@
       <module name="javaweb-basic-code" target="1.8" />
       <module name="jdbc-basic-code" target="1.6" />
       <module name="jpa-basic-code" target="1.5" />
+      <module name="jvm-basic-code" target="8" />
       <module name="kafka-basic-code" target="1.5" />
       <module name="mybatis-basic-code" target="1.5" />
       <module name="netty-basic-code" target="8" />

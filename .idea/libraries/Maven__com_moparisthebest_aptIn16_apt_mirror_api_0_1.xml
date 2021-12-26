@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.moparisthebest.aptIn16:apt-mirror-api:0.1">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1.jar!/" />
+      <root url="jar:///opt/data/maven/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1-javadoc.jar!/" />
+      <root url="jar:///opt/data/maven/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1-sources.jar!/" />
+      <root url="jar:///opt/data/maven/com/moparisthebest/aptIn16/apt-mirror-api/0.1/apt-mirror-api-0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
