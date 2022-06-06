@@ -8,6 +8,7 @@ import com.alibaba.druid.sql.parser.ParserException;
 import com.alibaba.druid.sql.visitor.SchemaStatVisitor;
 import com.alibaba.druid.stat.TableStat;
 import com.alibaba.druid.util.JdbcConstants;
+import com.pgman.goku.sql.GokuSQLUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -74,6 +75,17 @@ public class SQLParserUtils {
 
         return tableInfo;
 
+    }
+
+    /**
+     * SQL格式化工具
+     *
+     * @param sql
+     * @return
+     */
+    public static String sqlFormat(String sql){
+        String sqlStr = GokuSQLUtils.sqlFormat(sql);
+        return sqlStr;
     }
 
 

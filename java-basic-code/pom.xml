@@ -7,6 +7,26 @@
     <groupId>com.pgman.goku</groupId>
     <artifactId>java-basic-code</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>jar</packaging>
 
 
@@ -17,12 +37,12 @@
         <fastjson.version>1.2.62</fastjson.version>
         <log4j.version>1.2.17</log4j.version>
         <slf4j.version>1.7.30</slf4j.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.8.2</junit.version>
         <guava.version>28.2-jre</guava.version>
         <scala.version>2.11.8</scala.version>
         <kafka.version>2.0.0</kafka.version>
         <calcite.version>1.20.0</calcite.version>
-        <alibaba.druid.version>1.1.20</alibaba.druid.version>
+        <alibaba.druid.version>1.2.9</alibaba.druid.version>
         <org.apache.commons.version>3.9</org.apache.commons.version>
         <izern.sequence.version>1.0.0</izern.sequence.version>
         <izern.common-utils.version>1.2</izern.common-utils.version>
@@ -129,13 +149,13 @@
             <version>${kafka.version}</version>
         </dependency>
 
-        <!-- 数据库连接池之 Druid -->
-        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.2.1</version>
-        </dependency>
+<!--        &lt;!&ndash; 数据库连接池之 Druid &ndash;&gt;-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba/druid &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid</artifactId>-->
+<!--            <version>1.2.1</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 

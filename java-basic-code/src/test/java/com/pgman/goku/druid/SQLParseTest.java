@@ -1,5 +1,6 @@
 package com.pgman.goku.druid;
 
+import com.alibaba.druid.DbType;
 import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLStatement;
 import com.alibaba.druid.sql.dialect.mysql.visitor.MySqlSchemaStatVisitor;
@@ -37,7 +38,7 @@ public class SQLParseTest {
                 "t1.pdate " +
                 "having count(1) > 2 ";
 
-        String dbType = JdbcConstants.MYSQL;
+        DbType dbType = DbType.hive;
 
         //格式化输出
         String result = SQLUtils.format(sql, dbType);
