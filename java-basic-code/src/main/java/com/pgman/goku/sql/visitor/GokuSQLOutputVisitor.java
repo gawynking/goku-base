@@ -320,18 +320,19 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
                 newLine = true;
             }
 
+            ++this.indentCount;
             if (newLine) {
                 this.println();
-                printIndent();
-                if(this.indentCount<=0){
-                    print('\t');
-                }
+//                printIndent();
+//                if(this.indentCount<=0){
+//                    print('\t');
+//                }
                 this.print(' ');
             } else {
                 this.print(' ');
             }
 
-            ++this.indentCount;
+
             this.print0(this.ucase ? "ON " : "on ");
             this.printExpr(condition, this.parameterized);
             --this.indentCount;
