@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.pgman.goku.config.ConfigurationManager;
 import com.pgman.goku.util.JSONUtils;
 import org.apache.flink.api.common.functions.FilterFunction;
-import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.functions.RichFilterFunction;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.configuration.Configuration;

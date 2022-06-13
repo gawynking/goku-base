@@ -1,4 +1,4 @@
-//package com.pgman.goku.datastream.source;
+package com.pgman.goku.datastream.source;//package com.pgman.goku.datastream.source;
 //
 //import org.apache.flink.api.common.serialization.SimpleStringSchema;
 //import org.apache.flink.api.common.serialization.TypeInformationSerializationSchema;

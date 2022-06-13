@@ -8,7 +8,6 @@ import com.pgman.goku.table.udf.ScalarGetJSONItem;
 import com.pgman.goku.table.udf.ScalarGetTimestamp;
 import com.pgman.goku.util.DateUtils;
 import com.pgman.goku.util.JSONUtils;
-import com.pgman.goku.util.SQLUtils;
 import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
@@ -26,10 +25,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.java.StreamTableEnvironment;
-import org.apache.flink.table.functions.*;
+import org.apache.flink.table.functions.TemporalTableFunction;
 import org.apache.flink.types.Row;
 
-import java.util.List;
 import java.util.Properties;
 
 /**

@@ -1,7 +1,5 @@
 package com.pgman.goku.table.udf;
 
-import com.alibaba.fastjson.JSONObject;
-import com.pgman.goku.util.DateUtils;
 import com.pgman.goku.util.JSONUtils;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.table.functions.ScalarFunction;

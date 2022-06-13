@@ -19,7 +19,8 @@ import org.apache.hadoop.hbase.client.Connection;
 
 import java.util.Collections;
 import java.util.Properties;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 

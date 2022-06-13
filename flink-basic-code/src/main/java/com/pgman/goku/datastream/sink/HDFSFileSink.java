@@ -1,6 +1,5 @@
 package com.pgman.goku.datastream.sink;
 
-import akka.remote.WireFormats;
 import org.apache.flink.api.common.serialization.SimpleStringEncoder;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.core.fs.Path;

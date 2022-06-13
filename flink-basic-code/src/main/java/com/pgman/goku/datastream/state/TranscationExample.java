@@ -1,8 +1,5 @@
 package com.pgman.goku.datastream.state;
 
-import org.apache.flink.streaming.api.functions.sink.TwoPhaseCommitSinkFunction;
-import org.apache.flink.streaming.runtime.operators.GenericWriteAheadSink;
-
 public class TranscationExample {
 
     public static void main(String[] args) {

@@ -17,7 +17,6 @@ import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 import org.apache.flink.util.Collector;
 
-import java.util.Optional;
 import java.util.Properties;
 
 /**

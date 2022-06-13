@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.pgman.goku.dataset.example;
+package com.pgman.goku.example;
 
 import org.apache.flink.api.java.ExecutionEnvironment;
 

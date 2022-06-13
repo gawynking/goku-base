@@ -1,8 +1,6 @@
 package com.pgman.goku.datastream.source;
 
 import org.apache.flink.streaming.api.functions.source.ParallelSourceFunction;
-import org.apache.flink.streaming.api.watermark.Watermark;
-import org.apache.flink.streaming.api.windowing.time.Time;
 
 /**
  * 自定义实现一个支持并行度的source
