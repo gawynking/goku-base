@@ -1,3 +1,4 @@
+import com.pgman.goku.config.ConfigurationManager;
 import com.pgman.goku.util.DateUtils;
 import com.pgman.goku.util.SQLUtils;
 
@@ -10,8 +11,8 @@ public class Test {
     @org.junit.Test
     public void testUpsert(){
 
-        Object o = null;
-        System.out.println(o.toString());
+        String string = ConfigurationManager.getString("broker.list");
+        System.out.println(string);
 
     }
 
