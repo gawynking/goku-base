@@ -1,0 +1,43 @@
+PARSER_BEGIN(IdList)
+
+/**
+ * ID lister.
+ */
+public class IdList {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    IdList parser = new IdList(System.in);
+    parser.Input();
+  }
+
+}
+
+PARSER_END(IdList)
+
+SKIP : {
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+TOKEN : {
+  < Id: ["a"-"z","A"-"Z"] ( ["a"-"z","A"-"Z","0"-"9"] )* >
+}
+
+/** Top level production. */
+void Input() :
+{}
+{
+  ( <Id> )+ <EOF>
+}
+```java
+
+
+The main point to note is that the regular expressions in the `SKIP` specification are only ignored *between tokens* and not *within tokens*. This grammar accepts any sequence of identifiers with white space in between.
+
+A legal input for this grammar is:
+
+```java
+abc xyz123 A B C \t\n aaa

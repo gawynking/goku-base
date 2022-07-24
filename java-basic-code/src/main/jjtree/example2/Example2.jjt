@@ -1,0 +1,116 @@
+options {
+  MULTI=true;
+  KEEP_LINE_COLUMN = false;
+}
+
+PARSER_BEGIN(Example2)
+
+/**
+ * An Arithmetic Grammar.
+ */
+public class Example2 {
+
+  /** Main entry point. */
+  public static void main(String args[]) {
+    System.out.println("Reading from standard input...");
+    Example2 t = new Example2(System.in);
+    try {
+      ASTStart n = t.Start();
+      n.dump("");
+      System.out.println("Thank you.");
+    } catch (Exception e) {
+      System.out.println("Oops.");
+      System.out.println(e.getMessage());
+      e.printStackTrace();
+    }
+  }
+}
+
+PARSER_END(Example2)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| <"//" (~["\n","\r"])* ("\n"|"\r"|"\r\n")>
+| <"/*" (~["*"])* "*" (~["/"] (~["*"])* "*")* "/">
+}
+
+TOKEN : /* LITERALS */
+{
+  < INTEGER_LITERAL:
+        <DECIMAL_LITERAL> (["l","L"])?
+      | <HEX_LITERAL> (["l","L"])?
+      | <OCTAL_LITERAL> (["l","L"])?
+  >
+|
+  < #DECIMAL_LITERAL: ["1"-"9"] (["0"-"9"])* >
+|
+  < #HEX_LITERAL: "0" ["x","X"] (["0"-"9","a"-"f","A"-"F"])+ >
+|
+  < #OCTAL_LITERAL: "0" (["0"-"7"])* >
+}
+
+TOKEN : /* IDENTIFIERS */
+{
+  < IDENTIFIER: <LETTER> (<LETTER>|<DIGIT>)* >
+|
+  < #LETTER: ["_","a"-"z","A"-"Z"] >
+|
+  < #DIGIT: ["0"-"9"] >
+}
+
+/** Main production. */
+ASTStart Start() : {}
+{
+  Expression() ";"
+  { return jjtThis; }
+}
+
+/** An Expression. */
+void Expression() #void : {}
+{
+  AdditiveExpression()
+}
+
+/** An Additive Expression. */
+void AdditiveExpression() #void : {}
+{
+  (
+    MultiplicativeExpression() ( ( "+" | "-" ) MultiplicativeExpression() )*
+  ) #Add(>1)
+}
+
+/** A Multiplicative Expression. */
+void MultiplicativeExpression() #void : {}
+{
+  (
+    UnaryExpression() ( ( "*" | "/" | "%" ) UnaryExpression() )*
+  ) #Mult(>1)
+}
+
+/** A Unary Expression. */
+void UnaryExpression() #void : {}
+{
+  "(" Expression() ")" | MyID() | Integer()
+}
+
+/** An Identifier. */
+void MyID() :
+{
+  Token t;
+}
+{
+  t=<IDENTIFIER>
+  {
+    jjtThis.setName(t.image);
+  }
+}
+
+/** An Integer. */
+void Integer() : {}
+{
+  <INTEGER_LITERAL>
+}

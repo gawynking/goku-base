@@ -53,6 +53,48 @@ public class DateUtils {
     }
 
     /**
+     * 时间戳毫秒值转化为字符串
+     * @return
+     */
+    public static String fromUnixtime(Long timestamp,String pattern){
+
+        String dateStr = null;
+        try{
+            if(String.valueOf(timestamp).length() == 13) {
+                dateStr = dateFormat(new Date(timestamp), pattern);
+            }else if(String.valueOf(timestamp).length() == 10){
+                dateStr = dateFormat(new Date(timestamp*1000), pattern);
+            }
+            return dateStr;
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    /**
+     * 时间秒级别加减
+     *
+     * @param date
+     * @return
+     */
+    public static String timeAddOnSecond(Date date,int amount){
+
+        Calendar cal = Calendar.getInstance();
+        if(date == null){
+            cal.setTime(new Date());
+        }else{
+            cal.setTime(date);
+        }
+        cal.add(Calendar.SECOND, amount);
+
+        return DateUtils.DATE_TIME_FORMAT.format(cal.getTime());
+
+    }
+
+    /**
      * 字符串解析成时间对象
      *
      * @param dateTimeString
@@ -293,6 +335,25 @@ public class DateUtils {
         cal.setTime(date);
         cal.add(Calendar.DATE, interval);
         return cal.getTime();
+    }
+
+    /**
+     * 将输入日期字符串转换为 时间戳
+     *
+     * @param dateString
+     * @param pattern
+     * @return
+     */
+    public static Long getTimestamp(String dateString ,String pattern){
+
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+            return simpleDateFormat.parse(dateString).getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return 0L;
+        }
+
     }
 
 }

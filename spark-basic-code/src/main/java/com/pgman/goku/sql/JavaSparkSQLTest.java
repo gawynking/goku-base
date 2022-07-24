@@ -45,9 +45,37 @@ public class JavaSparkSQLTest {
 		// rdd2DatasetsProgrammatically();
 		// dataSourcesLoadAndSaveOperations();
 		// hiveTables();
-		jdbcDataSources();
+//		jdbcDataSources();
+
+		sparkSQLDebug();
+	}
+
+
+	/**
+	 * Spark SQL debug 任务
+	 */
+	public static void sparkSQLDebug() {
+
+		String warehouseLocation = "/Users/chavinking/test/spark-warehouse";
+		SparkSession spark = SparkSession.builder().master("local").appName("rdd2dfReflection")
+				.config("spark.sql.warehouse.dir", warehouseLocation)
+				.getOrCreate();
+
+		Dataset<Row> people = spark.read().json("/Users/chavinking/github/goku-base/spark-basic-code/src/main/files/people.json");
+
+//		people.printSchema();
+
+		people.createOrReplaceTempView("people");
+
+		Dataset<Row> namesDF = spark.sql("SELECT name,age FROM people");
+		namesDF.show();
+
+		spark.close();
 
 	}
+
+
+
 
 	/**
 	 * 创建 Datasets:

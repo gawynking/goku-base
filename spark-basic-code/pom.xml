@@ -220,6 +220,14 @@
             <version>2.4</version>
         </dependency>
 
+        <!--
+        解决 java.lang.IllegalArgumentException: Illegal pattern component: XXX
+        -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -25,7 +25,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="scala-sdk-2.12.10" level="application" />
+    <orderEntry type="library" exported="" name="scala-sdk-2.12.10" level="application" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:11.0.2" level="project" />
@@ -189,7 +189,7 @@
     <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.26" level="project" />
     <orderEntry type="library" name="Maven: org.apache.mina:mina-core:2.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming-flume_2.12:2.4.4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.5" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.10" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-streams:2.0.0" level="project" />
