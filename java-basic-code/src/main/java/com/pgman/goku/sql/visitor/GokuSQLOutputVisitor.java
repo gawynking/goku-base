@@ -538,10 +538,13 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
      * GROUP BY
      *  格式化group by子句
      *
+     *  2022-08-05：修复grouping sets输出bug
+     *
      * @param x
      * @return
      */
     public boolean visit(SQLSelectGroupByClause x) {
+        boolean isGroupingSets = false;
         boolean paren = DbType.oracle == this.dbType || x.isParen();
         boolean rollup = x.isWithRollUp();
         boolean cube = x.isWithCube();
@@ -585,7 +588,7 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
                 }
 
                 // 打印,
-                if (i != itemSize - 1) {
+                if (i < itemSize - 2) {
                     if (groupItemSingleLine) {
                         println(", ");
                     } else {
@@ -595,7 +598,15 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
                             print(", ");
                         }
                     }
+                }else if(i == itemSize - 2){
+                    if((SQLExpr)items.get(i+1) instanceof SQLGroupingSetExpr){
+                        --this.indentCount;
+                        isGroupingSets=true;
+                    }else{
+                        print(", ");
+                    }
                 }
+
 
                 SQLCommentHint hint = null;
                 if (item instanceof SQLExprImpl) {
@@ -611,7 +622,10 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
                 this.print(')');
             }
 
-            --this.indentCount;
+            if(!isGroupingSets){
+                --this.indentCount;
+            }
+
         }
 
         if (x.getHaving() != null) {
@@ -630,6 +644,53 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
 
         return false;
     }
+
+
+    /**
+     * 格式化输出grouping sets
+     *
+     * @param x
+     * @return
+     */
+    public boolean visit(SQLGroupingSetExpr x) {
+        print0(ucase ? "GROUPING SETS" : "grouping sets");
+        print0(" (");
+        println();
+
+        // 输出grouping sets元素
+        printAndAccept(x.getParameters(), ", ");
+
+        println();
+        print(')');
+        return false;
+    }
+
+
+    /**
+     * 格式化输出grouping sets元素内容
+     *
+     * @param x
+     * @return
+     */
+    public boolean visit(SQLListExpr x) {
+        incrementIndent();
+        printIndent();
+        print('(');
+        print("\n");
+        incrementIndent();
+        printIndent();
+
+        printAndAccept(x.getItems(), ", ");
+
+        print("\n");
+        decrementIndent();
+        printIndent();
+        print(')');
+        decrementIndent();
+
+        return false;
+    }
+
 
     /**
      * ORDER BY
@@ -696,6 +757,23 @@ public class GokuSQLOutputVisitor extends HiveOutputVisitor {
             }
         }
 
+    }
+
+
+    /**
+     * 格式化输出list元素
+     *
+     * @param nodes
+     * @param seperator
+     */
+    protected void printAndAccept(List<? extends SQLObject> nodes, String seperator) {
+        for (int i = 0, size = nodes.size(); i < size; ++i) {
+            if (i != 0) {
+                print0(seperator);
+                println();
+            }
+            nodes.get(i).accept(this);
+        }
     }
 
 

@@ -1,13 +1,13 @@
 package com.pgman.goku.druid;
 
 import com.alibaba.druid.DbType;
+import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLStatement;
 import com.alibaba.druid.sql.dialect.hive.parser.HiveStatementParser;
 import com.alibaba.druid.sql.parser.SQLParserFeature;
 import com.alibaba.druid.sql.parser.SQLStatementParser;
 import com.pgman.goku.sql.GokuSQLUtils;
 import com.pgman.goku.util.SQLParserUtils;
-import com.pgman.goku.util.SQLUtils;
 
 import java.util.List;
 
@@ -120,6 +120,25 @@ public class Test {
         List<SQLStatement> statementList = parser.parseStatementList();
 
         System.out.println(statementList);
+
+    }
+
+    @org.junit.Test
+    public void test02(){
+
+        String sql = "select \n" +
+                "\n" +
+                "a,b,c,d,e,f\n" +
+                "\n" +
+                "from tmp t1 \n" +
+                "group by a,b,c,d,e,f \n" +
+                "grouping sets((a,b,c),(b,c,d),(d,e,f))";
+
+        SQLStatement sqlStatement = SQLUtils.parseSingleStatement(sql, DbType.hive);
+
+
+        String format = GokuSQLUtils.sqlFormat(sql);
+        System.out.println(format);
 
     }
 

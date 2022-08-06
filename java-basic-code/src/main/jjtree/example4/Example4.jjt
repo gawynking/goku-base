@@ -17,8 +17,9 @@ public class Example4 {
     Example4 t = new Example4(System.in);
     try {
       ASTStart n = t.Start();
-      Eg4Visitor v = new Eg4DumpVisitor();
+      Example4Visitor v = new Example4DefaultVisitor();
       n.jjtAccept(v, null);
+      n.dump("");
       System.out.println("Thank you.");
     } catch (Exception e) {
       System.out.println("Oops.");

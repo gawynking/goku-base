@@ -157,6 +157,14 @@
 <!--            <version>1.2.1</version>-->
 <!--        </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-core -->
+        <dependency>
+            <groupId>org.apache.calcite</groupId>
+            <artifactId>calcite-core</artifactId>
+            <version>1.30.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>

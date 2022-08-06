@@ -32,12 +32,3 @@ void Input() :
 {
   ( <Id> )+ <EOF>
 }
-```java
-
-
-The main point to note is that the regular expressions in the `SKIP` specification are only ignored *between tokens* and not *within tokens*. This grammar accepts any sequence of identifiers with white space in between.
-
-A legal input for this grammar is:
-
-```java
-abc xyz123 A B C \t\n aaa
