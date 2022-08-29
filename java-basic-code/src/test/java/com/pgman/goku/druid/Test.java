@@ -126,13 +126,27 @@ public class Test {
     @org.junit.Test
     public void test02(){
 
-        String sql = "select \n" +
-                "\n" +
-                "a,b,c,d,e,f\n" +
-                "\n" +
-                "from tmp t1 \n" +
-                "group by a,b,c,d,e,f \n" +
-                "grouping sets((a,b,c),(b,c,d),(d,e,f))";
+        String sql = "-- 1 开头注释\n" +
+                "insert into table tmp.abc \n" +
+                "-- 1.1 test \n" +
+                "select -- 2 select注释 \n" +
+                "-- 3 空白注释 \n" +
+                "a,b,-- 4 空白注释 \n" +
+                "c, -- 5 空白注释 \n" +
+                "d,e,f -- 6 空白注释 \n" +
+                "-- 7 空白注释 \n" +
+                "from tmp t1 -- 8 空白注释 \n" +
+                "-- 9 空白注释 \n" +
+                "group by -- 10 空白注释 \n" +
+                "a,b,c,\n" +
+                "d,-- 11 空白注释 \n" +
+                "-- 12 空白注释 \n" +
+                "e,f \n" +
+                "-- 13 空白注释 \n" +
+                "grouping sets( -- 14 空白注释 \n" +
+                "-- 15 空白注释 \n" +
+                "    (a,b,c),(b,c,d),(d,e,f))\n" +
+                "-- 16 空白注释 ";
 
         SQLStatement sqlStatement = SQLUtils.parseSingleStatement(sql, DbType.hive);
 
