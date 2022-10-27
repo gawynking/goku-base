@@ -22,6 +22,7 @@
         <module name="netty-basic-code" />
         <module name="project-travel-demo" />
         <module name="thinkinginjava" />
+        <module name="flink-basic-code" />
         <module name="jpa-basic-code" />
         <module name="javaweb-basic-code" />
         <module name="jdbc-basic-code" />
@@ -31,20 +32,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="algds-basic-code" target="7" />
-      <module name="dp-basic-code" target="8" />
+      <module name="algds-basic-code" target="1.7" />
+      <module name="dp-basic-code" target="1.8" />
       <module name="elasticsearch-basic-code" target="1.5" />
       <module name="flink-basic-code" target="1.8" />
       <module name="front-basic-code" target="1.5" />
-      <module name="hadoop-basic-code" target="8" />
-      <module name="java-basic-code" target="1.5" />
+      <module name="hadoop-basic-code" target="1.8" />
+      <module name="java-basic-code" target="1.8" />
       <module name="javaweb-basic-code" target="1.8" />
       <module name="jdbc-basic-code" target="1.6" />
       <module name="jpa-basic-code" target="1.5" />
-      <module name="jvm-basic-code" target="8" />
+      <module name="jvm-basic-code" target="1.8" />
       <module name="kafka-basic-code" target="1.5" />
       <module name="mybatis-basic-code" target="1.5" />
-      <module name="netty-basic-code" target="8" />
+      <module name="netty-basic-code" target="1.8" />
       <module name="project-bms-demo" target="1.8" />
       <module name="project-travel-demo" target="1.8" />
       <module name="spark-basic-code" target="1.8" />
