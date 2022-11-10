@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/javaweb-basic-code" />
     <file type="web" url="file://$PROJECT_DIR$/project-bms-demo" />
@@ -34,8 +35,13 @@
         <option value="$PROJECT_DIR$/hadoop-basic-code/pom.xml" />
         <option value="$PROJECT_DIR$/dp-basic-code/pom.xml" />
         <option value="$PROJECT_DIR$/jvm-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/flink1.16-basic-code/pom.xml" />
+        <option value="$PROJECT_DIR$/mock-data-source/mock-data-source/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>

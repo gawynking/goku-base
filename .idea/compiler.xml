@@ -13,6 +13,7 @@
         <module name="hadoop-basic-code" />
         <module name="kafka-basic-code" />
         <module name="vue-basic-code" />
+        <module name="flink1.16-basic-code" />
         <module name="springboot-basic-code" />
         <module name="jvm-basic-code" />
         <module name="java-basic-code" />
@@ -31,31 +32,7 @@
         <module name="dp-basic-code" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="algds-basic-code" target="1.7" />
-      <module name="dp-basic-code" target="1.8" />
-      <module name="elasticsearch-basic-code" target="1.5" />
-      <module name="flink-basic-code" target="1.8" />
-      <module name="front-basic-code" target="1.5" />
-      <module name="hadoop-basic-code" target="1.8" />
-      <module name="java-basic-code" target="1.8" />
-      <module name="javaweb-basic-code" target="1.8" />
-      <module name="jdbc-basic-code" target="1.6" />
-      <module name="jpa-basic-code" target="1.5" />
-      <module name="jvm-basic-code" target="1.8" />
-      <module name="kafka-basic-code" target="1.5" />
-      <module name="mybatis-basic-code" target="1.5" />
-      <module name="netty-basic-code" target="1.8" />
-      <module name="project-bms-demo" target="1.8" />
-      <module name="project-travel-demo" target="1.8" />
-      <module name="spark-basic-code" target="1.8" />
-      <module name="spring-basic-code" target="1.5" />
-      <module name="springboot-basic-code" target="1.8" />
-      <module name="springmvc-basic-code" target="1.8" />
-      <module name="ssm-basic-code" target="1.8" />
-      <module name="tij4-basic-code" target="1.5" />
-      <module name="vue-basic-code" target="1.7" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
