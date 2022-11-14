@@ -12,6 +12,94 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <fastjson.version>1.2.62</fastjson.version>
+
+        <hadoop.version>2.8.5</hadoop.version>
+        <spark.version>2.1.0</spark.version>
+        <spark.artifact>2.11</spark.artifact>
+        <kafka.version>2.0.0</kafka.version>
+        <hbase.version>1.3.1</hbase.version>
+        <hive.version>2.1.0</hive.version>
+        <canal.version>1.1.0</canal.version>
+        <junit.version>4.4</junit.version>
+        <specs.version>1.2.5</specs.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <fastjson.version>1.2.62</fastjson.version>
     </properties>
+
+    <dependencies>
+
+        <!-- JSON依赖 -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+
+        <!-- Kafka依赖 -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams-scala_2.11</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
+
+        <!-- Log4j依赖 -->
+        <!-- Add logging framework, to produce console output when running in the IDE. -->
+        <!-- These dependencies are excluded from the application JAR by default. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.7</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+
+        <!-- Snowflake – 序列号 -->
+        <dependency>
+            <groupId>cn.izern</groupId>
+            <artifactId>sequence</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- 单元测试依赖 -->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+<!--            <scope>test</scope>-->
+        </dependency>
+
+
+    </dependencies>
 
 </project>
