@@ -6,7 +6,6 @@ import com.pgman.goku.mapper.BookMapper;
 import com.pgman.goku.util.DateUtils;
 import com.pgman.goku.util.KafkaUtils;
 import com.pgman.goku.util.ObjectUtils;
-import javafx.scene.transform.Scale;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -85,7 +84,7 @@ public class MockBookData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }else {
                     cache.sort(new Comparator<BookMapper>() {
@@ -98,7 +97,7 @@ public class MockBookData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }
                 cache.clear();
@@ -112,7 +111,7 @@ public class MockBookData {
             JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
 //            System.out.println(jsonObject.toString());
             KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-            Thread.sleep(sleepTime);
+            Thread.sleep(new Random().nextInt(sleepTime));
         }
 
     }

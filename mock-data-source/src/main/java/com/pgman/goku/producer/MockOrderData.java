@@ -125,7 +125,7 @@ public class MockOrderData {
                             KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"),jsonOrderDetail.toString());
                         }
 
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 } else {
                     cache.sort(new Comparator<Order>() {
@@ -138,16 +138,29 @@ public class MockOrderData {
                         OrderMapper orderMapper1 = entry.getOrderMapper();
                         List<OrderDetailMapper> orderDetailMappers1 = entry.getOrderDetailMappers();
 
-                        JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
-//                        System.out.println(jsonOrder.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"),jsonOrder.toString());
-                        for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
-                            JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
-//                            System.out.println(jsonOrderDetail.toString());
-                            KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"),jsonOrderDetail.toString());
+                        if(new Random().nextInt(99)%2==0) {
+                            JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"), jsonOrder.toString());
+
+                            Thread.sleep(new Random().nextInt(sleepTime));
+
+                            for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
+                                JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+                                KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"), jsonOrderDetail.toString());
+                                Thread.sleep(new Random().nextInt(sleepTime));
+                            }
+                        }else {
+                            for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
+                                JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+                                KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"), jsonOrderDetail.toString());
+                                Thread.sleep(new Random().nextInt(sleepTime));
+                            }
+
+                            JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"), jsonOrder.toString());
                         }
 
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }
                 cache.clear();
@@ -170,7 +183,7 @@ public class MockOrderData {
                 KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"),jsonOrderDetail.toString());
             }
 
-            Thread.sleep(sleepTime);
+            Thread.sleep(new Random().nextInt(sleepTime));
         }
 
     }

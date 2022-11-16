@@ -11,32 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mock-data-source/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/config/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/mapper/BookShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookShopData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockOrderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockUserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/util/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/util/KafkaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/util/MockDataUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/util/ObjectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/resources/mock.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/test/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.15-basic-code/flink1.15-basic-code.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/mock-data-source.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookShopData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookShopData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockOrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockOrderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

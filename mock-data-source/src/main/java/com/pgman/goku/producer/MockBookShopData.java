@@ -118,7 +118,7 @@ public class MockBookShopData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 } else {
                     cache.sort(new Comparator<BookShopMapper>() {
@@ -131,7 +131,7 @@ public class MockBookShopData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }
                 cache.clear();
@@ -145,7 +145,7 @@ public class MockBookShopData {
             JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
 //            System.out.println(jsonObject.toString());
             KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-            Thread.sleep(sleepTime);
+            Thread.sleep(new Random().nextInt(sleepTime));
         }
 
     }

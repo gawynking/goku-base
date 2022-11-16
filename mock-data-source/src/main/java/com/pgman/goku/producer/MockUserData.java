@@ -85,7 +85,7 @@ public class MockUserData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }else {
                     cache.sort(new Comparator<UserMapper>() {
@@ -98,7 +98,7 @@ public class MockUserData {
                         JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
 //                        System.out.println(jsonObject.toString());
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-                        Thread.sleep(sleepTime);
+                        Thread.sleep(new Random().nextInt(sleepTime));
                     }
                 }
                 cache.clear();
@@ -112,7 +112,7 @@ public class MockUserData {
             JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
 //            System.out.println(jsonObject.toString());
             KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-            Thread.sleep(sleepTime);
+            Thread.sleep(new Random().nextInt(sleepTime));
         }
 
     }
