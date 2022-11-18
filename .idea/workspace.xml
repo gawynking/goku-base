@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-data-source/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookShopData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockBookShopData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockOrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/pgman/goku/producer/MockOrderData.java" afterDir="false" />
@@ -262,15 +263,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/chavinking/github/goku-base/mock-data-source/src/main/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chavinking/github/goku-base&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mock-data-source/src/main/resources" />
@@ -582,8 +584,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockData (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.producer.MockData" />
+    <configuration name="MockBookData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.producer.MockBookData" />
       <module name="mock-data-source" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -832,8 +834,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MockBookData" />
       <item itemvalue="Application.MockData" />
-      <item itemvalue="Application.MockData (4)" />
       <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.Test.test01" />
       <item itemvalue="JUnit.Test.unitTest" />
@@ -841,10 +843,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.MockBookData" />
         <item itemvalue="JUnit.Test.test01" />
         <item itemvalue="JUnit.Test.unitTest" />
         <item itemvalue="Application.MockData" />
-        <item itemvalue="Application.MockData (4)" />
       </list>
     </recent_temporary>
   </component>

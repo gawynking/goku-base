@@ -12,6 +12,7 @@ import java.util.*;
 public class MockBookShopData {
 
     public static boolean cycleFlag = true;
+    private static boolean testFlag = false;
 
     public static boolean isCycleFlag() {
         return cycleFlag;
@@ -22,6 +23,8 @@ public class MockBookShopData {
     }
 
     public static void mockBookShop(boolean orderedFlag, int sleepTime, int unOrderedNum) throws InterruptedException {
+
+        Random random = new Random();
 
         Map<Integer, String> bookShopLevelPool = new HashMap<>();
         bookShopLevelPool.put(1, "S级");
@@ -49,7 +52,7 @@ public class MockBookShopData {
         for (int i = 1; i <= bookShopBrandPool.size() * bookShopCityPool.size(); i++) {
             Integer shopManagerId = i;
             String shopManagerName = "书店经理-" + i;
-            String brandId = String.valueOf(new Random().nextInt(bookShopBrandPool.size()) + 1);
+            String brandId = String.valueOf(random.nextInt(bookShopBrandPool.size()) + 1);
             bookShopManagerPool.put(shopManagerId, new String[]{shopManagerName, brandId});
         }
 
@@ -78,13 +81,13 @@ public class MockBookShopData {
 
             shopId = shopId + 1;
             shopName = "网上书店-" + shopId;
-            cityId = new Random().nextInt(bookShopCityPool.size()) + 1;
+            cityId = random.nextInt(bookShopCityPool.size()) + 1;
             cityName = bookShopCityPool.get(cityId);
-            shopAddress = "地址:" + cityName + "-" + String.valueOf(new Random().nextInt(9999)) + "-号";
-            levelId = new Random().nextInt(bookShopLevelPool.size()) + 1;
+            shopAddress = "地址:" + cityName + "-" + String.valueOf(random.nextInt(9999)) + "-号";
+            levelId = random.nextInt(bookShopLevelPool.size()) + 1;
             levelName = bookShopLevelPool.get(levelId);
             openDate = DateUtils.getCurrentDate();
-            managerId = new Random().nextInt(bookShopManagerPool.size()) + 1;
+            managerId = random.nextInt(bookShopManagerPool.size()) + 1;
             managerName = bookShopManagerPool.get(managerId)[0];
             brandId = Integer.valueOf(bookShopManagerPool.get(managerId)[1]);
             brandName = bookShopBrandPool.get(brandId);
@@ -115,37 +118,38 @@ public class MockBookShopData {
                 i = 0;
                 if (orderedFlag) {
                     for (BookShopMapper entry : cache) {
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
+                        }
                     }
                 } else {
-                    cache.sort(new Comparator<BookShopMapper>() {
-                        @Override
-                        public int compare(BookShopMapper o1, BookShopMapper o2) {
-                            return new Random().nextInt(9) - new Random().nextInt(9);
-                        }
-                    });
+                    Collections.shuffle(cache);
                     for (BookShopMapper entry : cache) {
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
+                        }
                     }
                 }
                 cache.clear();
                 cache.add(bookShop);
                 i++;
             }
-
+            Thread.sleep(random.nextInt(sleepTime));
         }
 
         for (BookShopMapper entry : cache) {
-            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
-//            System.out.println(jsonObject.toString());
-            KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"),jsonObject.toString());
-            Thread.sleep(new Random().nextInt(sleepTime));
+            if(testFlag){
+                System.out.println(entry.toString());
+            }else {
+                JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
+                KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
+            }
         }
 
     }

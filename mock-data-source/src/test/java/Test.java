@@ -9,7 +9,7 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        MockDataUtils.mockOrderStreamData(false,5000,3);
+        MockDataUtils.mockOrderStreamData(false,3000,3);
     }
 
     /**

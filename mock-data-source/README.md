@@ -79,6 +79,17 @@ create table order_detail(
 );
 ```
 
+## 配置文件[mock.properties]
+```properties
+# kafka config
+broker.list = localhost:9092
+user.topics = user_topic
+book.topics = book_topic
+shop.topics = shop_topic
+order.topics = order_topic
+order.book.topics = order_book_topic
+```
+
 ## 数据观测
 启动项目后可以通过如下命令观察各个数据源输出情况：
 ```

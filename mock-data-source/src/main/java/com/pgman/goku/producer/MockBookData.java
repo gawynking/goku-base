@@ -13,6 +13,7 @@ import java.util.*;
 public class MockBookData {
 
     public static boolean cycleFlag = true;
+    private static boolean testFlag = false;
 
     public static boolean isCycleFlag() {
         return cycleFlag;
@@ -23,6 +24,8 @@ public class MockBookData {
     }
 
     public static void mockBook(boolean orderedFlag, int sleepTime, int unOrderedNum) throws InterruptedException {
+
+        Random random = new Random();
 
         HashMap<Integer, String> category = new HashMap<>();
         category.put(1, "Java");
@@ -52,12 +55,12 @@ public class MockBookData {
         while (cycleFlag) {
 
             bookId = bookId + 1;
-            categoryId = new Random().nextInt(category.size())+1;
+            categoryId = random.nextInt(category.size())+1;
             categoryName = category.get(categoryId);
-            bookName = categoryName + "-" + String.valueOf(new Random().nextInt(9999)) + "-版";
-            price = new BigDecimal(new Random().nextDouble() * 100).setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
-            author = categoryName + "-author:" + String.valueOf(new Random().nextInt(9999));
-            publisher = categoryName + "-publisher:" + String.valueOf(new Random().nextInt(9999));
+            bookName = categoryName + "-" + String.valueOf(random.nextInt(9999)) + "-版";
+            price = new BigDecimal(random.nextDouble() * 100).setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
+            author = categoryName + "-author:" + String.valueOf(random.nextInt(9999));
+            publisher = categoryName + "-publisher:" + String.valueOf(random.nextInt(9999));
             publisherDate = DateUtils.getCurrentDate();
             createDataTime = DateUtils.getCurrentDatetime();
 
@@ -81,42 +84,44 @@ public class MockBookData {
                 i=0;
                 if(orderedFlag){
                     for(BookMapper entry :cache){
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"), jsonObject.toString());
+                        }
                     }
                 }else {
-                    cache.sort(new Comparator<BookMapper>() {
-                        @Override
-                        public int compare(BookMapper o1, BookMapper o2) {
-                            return new Random().nextInt(9) - new Random().nextInt(9);
-                        }
-                    });
+                    Collections.shuffle(cache);
                     for(BookMapper entry :cache){
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"), jsonObject.toString());
+                        }
                     }
                 }
                 cache.clear();
                 cache.add(book);
                 i++;
             }
-
+            Thread.sleep(random.nextInt(sleepTime));
         }
 
         for(BookMapper entry :cache){
-            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
-//            System.out.println(jsonObject.toString());
-            KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"),jsonObject.toString());
-            Thread.sleep(new Random().nextInt(sleepTime));
+            if(testFlag){
+                System.out.println(entry.toString());
+            }else {
+                JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookMapper.class);
+                KafkaUtils.getInstance().send(ConfigurationManager.getString("book.topics"), jsonObject.toString());
+            }
         }
 
     }
 
     public static void main(String[] args) throws Exception{
+        testFlag = true;
         new MockBookData().mockBook(false,1000,3);
     }
 

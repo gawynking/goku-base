@@ -12,6 +12,7 @@ import java.util.*;
 public class MockUserData {
 
     public static boolean cycleFlag = true;
+    private static boolean testFlag = false;
 
     public static boolean isCycleFlag() {
         return cycleFlag;
@@ -22,6 +23,8 @@ public class MockUserData {
     }
 
     public static void mockUser(boolean orderedFlag, int sleepTime, int unOrderedNum) throws InterruptedException{
+
+        Random random = new Random();
 
         Map<Integer, String> bookShopCityPool = new HashMap<>();
         bookShopCityPool.put(1, "北京市");
@@ -54,13 +57,13 @@ public class MockUserData {
 
             userId = userId+1;
             userName = "User-" + userId;
-            sex = new Random().nextInt(2)+1;
-            account = "Account-" + String.valueOf(new Random().nextInt(999999999));
-            nickName = "Nick-" + String.valueOf(new Random().nextInt(999999999));
+            sex = random.nextInt(2)+1;
+            account = "Account-" + String.valueOf(random.nextInt(999999999));
+            nickName = "Nick-" + String.valueOf(random.nextInt(999999999));
             registerDateTime = DateUtils.getCurrentDatetime();
-            cityId = new Random().nextInt(bookShopCityPool.size()) + 1;
+            cityId = random.nextInt(bookShopCityPool.size()) + 1;
             cityName = bookShopCityPool.get(cityId);
-            crowdType = crowdTypePool.get(new Random().nextInt(crowdTypePool.size())+1);
+            crowdType = crowdTypePool.get(random.nextInt(crowdTypePool.size())+1);
 
             UserMapper user = new UserMapper(
              userId,
@@ -82,37 +85,38 @@ public class MockUserData {
                 i=0;
                 if(orderedFlag){
                     for(UserMapper entry :cache){
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
+                        }
                     }
                 }else {
-                    cache.sort(new Comparator<UserMapper>() {
-                        @Override
-                        public int compare(UserMapper o1, UserMapper o2) {
-                            return new Random().nextInt()-new Random().nextInt();
-                        }
-                    });
+                    Collections.shuffle(cache);
                     for(UserMapper entry :cache){
-                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
-//                        System.out.println(jsonObject.toString());
-                        KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-                        Thread.sleep(new Random().nextInt(sleepTime));
+                        if(testFlag){
+                            System.out.println(entry.toString());
+                        }else {
+                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
+                            KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
+                        }
                     }
                 }
                 cache.clear();
                 cache.add(user);
                 i++;
             }
-
+            Thread.sleep(random.nextInt(sleepTime));
         }
 
         for(UserMapper entry :cache){
-            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
-//            System.out.println(jsonObject.toString());
-            KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"),jsonObject.toString());
-            Thread.sleep(new Random().nextInt(sleepTime));
+            if(testFlag){
+                System.out.println(entry.toString());
+            }else {
+                JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
+                KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
+            }
         }
 
     }
