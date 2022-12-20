@@ -12,7 +12,6 @@
         <module name="kafka-basic-code" />
         <module name="vue-basic-code" />
         <module name="flink1.16-basic-code" />
-        <module name="flink1.15-basic-code" />
         <module name="jvm-basic-code" />
         <module name="spring-basic-code" />
         <module name="mock-data-source" />
@@ -34,7 +33,9 @@
         <module name="mybatis-basic-code" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="flink1.15-basic-code" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

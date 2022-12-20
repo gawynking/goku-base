@@ -1,6 +1,5 @@
-import com.pgman.goku.util.KafkaUtils;
-import com.pgman.goku.util.MockDataUtils;
-import com.pgman.goku.util.ObjectUtils;
+import com.goku.util.KafkaUtils;
+import com.goku.util.MockDataUtils;
 
 public class Test {
 
