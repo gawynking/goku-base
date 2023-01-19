@@ -14,12 +14,13 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <flink.version>1.16.0</flink.version>
         <target.java.version>1.8</target.java.version>
         <scala.binary.version>2.12</scala.binary.version>
         <maven.compiler.source>${target.java.version}</maven.compiler.source>
         <maven.compiler.target>${target.java.version}</maven.compiler.target>
+
+        <flink.version>1.16.0</flink.version>
+        <mysql.jdbc.version>5.1.5</mysql.jdbc.version>
         <log4j.version>2.17.1</log4j.version>
     </properties>
 
@@ -37,10 +38,12 @@
         </repository>
     </repositories>
 
+
+
     <dependencies>
 
         <!-- ************************************************************** -->
-        <!-- ********************* 1 引入项目内工具类模块 ********************* -->
+        <!-- ************************* Flink 依赖 ************************** -->
         <!-- ************************************************************** -->
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-core -->
@@ -48,7 +51,6 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-core</artifactId>
             <version>${flink.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java -->
@@ -56,7 +58,6 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java</artifactId>
             <version>${flink.version}</version>
-            <scope>provided</scope>
         </dependency>
 
 
@@ -74,7 +75,71 @@
             <version>${flink.version}</version>
         </dependency>
 
-        <!-- Flink Kafka依赖 -->
+
+
+
+
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- —————————————————————— Flink 测试依赖 ——————————————————————— -->
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- DataStream test依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-test-utils</artifactId>
+            <version>${flink.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Flink Table test依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-test-utils</artifactId>
+            <version>${flink.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- —————————————————— Connector Format依赖 ————————————————————— -->
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-avro</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-csv</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-json</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-parquet</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- —————————————————————— Flink JDBC依赖 —————————————————————— -->
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-jdbc</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
+
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- —————————————————————— Flink Kafka依赖 —————————————————————— -->
+        <!-- ———————————————————————————————————————————————————————————— -->
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka -->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -88,6 +153,17 @@
             <version>${flink.version}</version>
         </dependency>
 
+
+
+        <!-- ************************************************************ -->
+        <!-- *********************** JDBC 依赖模块 ************************ -->
+        <!-- ************************************************************ -->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.jdbc.version}</version>
+        </dependency>
 
 
 
@@ -107,6 +183,7 @@
         </dependency>
 
     </dependencies>
+
 
     <build>
         <plugins>
