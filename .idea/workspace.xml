@@ -11,17 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/ConnectorFormatExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/FlinkSourceCodeAnalysisExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/JdbcConnectorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/MapExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/SocketWindowWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/table/sql/FlinkSQLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/server/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/server/ThreacEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/HttpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/InetAddressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/InterruptibleSocketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/PostTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/SocketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/net/test/URLConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/FilterExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/KafkaConnectorExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/KafkaConnectorExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/util/JSONUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/resources/flink.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/resources/flink.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/SQLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/SQLTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +298,7 @@
       <recent name="com.pgman.goku.generic.tuple" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapExample">
+  <component name="RunManager" selected="Application.URLConnectionTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -590,13 +590,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectorFormatExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.ConnectorFormatExample" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.net.server.EchoServer" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
+          <option name="PATTERN" value="com.pgman.goku.net.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -604,13 +604,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcConnectorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.JdbcConnectorExample" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="InetAddressTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.net.test.InetAddressTest" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
+          <option name="PATTERN" value="com.pgman.goku.net.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -618,13 +618,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.MapExample" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="InterruptibleSocketTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.net.test.InterruptibleSocketTest" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
+          <option name="PATTERN" value="com.pgman.goku.net.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -632,13 +632,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.MapExample" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="ThreacEchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.net.server.ThreacEchoServer" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
+          <option name="PATTERN" value="com.pgman.goku.net.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -646,13 +646,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.MockData" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="URLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.net.test.URLConnectionTest" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.*" />
+          <option name="PATTERN" value="com.pgman.goku.net.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -852,19 +852,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConnectorFormatExample" />
-      <item itemvalue="Application.JdbcConnectorExample" />
-      <item itemvalue="Application.MapExample (1)" />
-      <item itemvalue="Application.MapExample" />
-      <item itemvalue="Application.MockData" />
+      <item itemvalue="Application.EchoServer" />
+      <item itemvalue="Application.InetAddressTest" />
+      <item itemvalue="Application.InterruptibleSocketTest" />
+      <item itemvalue="Application.ThreacEchoServer" />
+      <item itemvalue="Application.URLConnectionTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapExample" />
-        <item itemvalue="Application.MapExample (1)" />
-        <item itemvalue="Application.ConnectorFormatExample" />
-        <item itemvalue="Application.JdbcConnectorExample" />
-        <item itemvalue="Application.MockData" />
+        <item itemvalue="Application.URLConnectionTest" />
+        <item itemvalue="Application.InterruptibleSocketTest" />
+        <item itemvalue="Application.ThreacEchoServer" />
+        <item itemvalue="Application.EchoServer" />
+        <item itemvalue="Application.InetAddressTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1141,6 +1141,11 @@
           <url>jar:///opt/data/maven/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0.jar!/org/apache/flink/streaming/api/graph/StreamingJobGraphGenerator.class</url>
           <line>426</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/SQLTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

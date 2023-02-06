@@ -1,25 +1,32 @@
 package com.pgman.goku.test;
 
+import com.alibaba.druid.sql.SQLUtils;
+import com.alibaba.druid.sql.ast.SQLStatement;
 import com.pgman.goku.sql.GokuSQLUtils;
 import org.junit.Test;
+
+import java.util.List;
 
 public class SQLTest {
 
     @Test
     public void testSqlFormat(){
 
-        String sql = "SELECT\n" +
-                "\tany_value ( sc.SId ) SId,\n" +
-                "\tany_value ( student.Sname ) Sname,\n" +
-                "\tavg( sc.score ) score \n" +
-                "FROM\n" +
-                "\tsc\n" +
-                "\tJOIN student ON sc.SId = student.SId and 1=1\n" +
-                "GROUP BY\n" +
-                "\tsc.SId \n" +
-                "HAVING\n" +
-                "\tavg( sc.score ) > 60 and 2=2;";
+        String sql = "-- -1 \n" +
+                "select \n" +
+                "\n" +
+                "-- 0 \n" +
+                "t1.id as id, -- 1 \n" +
+                "t1.name as name, -- 2 \n" +
+                "t2.city_name -- 3 \n" +
+                "\n" +
+                "from tbl_a t1 \n" +
+                "left join tbl_b t2 on t1.id = t2.id and t1.city_id = t2.city_id \n" +
+                "\n" +
+                "where t1.local = 'yz'\n" +
+                ";";
 
+        SQLUtils.parseStatements(sql, "hive")
         String sqlFormat = GokuSQLUtils.sqlFormat(sql);
         System.out.println(sqlFormat);
 
