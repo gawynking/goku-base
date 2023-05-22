@@ -20,11 +20,15 @@ package com.pgman.goku.stream;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.typeinfo.Types;
+import org.apache.flink.api.dag.Transformation;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.streaming.api.graph.StreamGraph;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
+
+import java.util.List;
 
 /**
  * Implements a streaming windowed version of the "WordCount" program.
@@ -43,22 +47,8 @@ public class SocketWindowWordCount {
     public static void main(String[] args) throws Exception {
 
         // the host and the port to connect to
-        final String hostname;
-        final int port;
-        try {
-            final ParameterTool params = ParameterTool.fromArgs(args);
-            hostname = params.has("hostname") ? params.get("hostname") : "localhost";
-            port = params.getInt("port");
-        } catch (Exception e) {
-            System.err.println(
-                    "No port specified. Please run 'SocketWindowWordCount "
-                            + "--hostname <hostname> --port <port>', where hostname (localhost by default) "
-                            + "and port is the address of the text server");
-            System.err.println(
-                    "To start a simple text server, run 'netcat -l <port>' and "
-                            + "type the input text into the command line");
-            return;
-        }
+        final String hostname = "127.0.0.1";
+        final int port = 9999;
 
         // get the execution environment
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -83,6 +73,8 @@ public class SocketWindowWordCount {
 
         // print the results with a single thread, rather than in parallel
         windowCounts.print().setParallelism(1);
+
+        List<Transformation<?>> transformations = env.getTransformations();
 
         env.execute("Socket Window WordCount");
     }

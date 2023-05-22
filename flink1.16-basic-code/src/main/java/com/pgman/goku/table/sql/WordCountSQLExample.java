@@ -16,7 +16,8 @@
  * limitations under the License.
  */
 
-package org.apache.flink.table.examples.java.basics;
+package com.pgman.goku.table.sql;
+
 
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.TableEnvironment;
@@ -43,5 +44,7 @@ public final class WordCountSQLExample {
                                 // group for aggregation
                                 + "GROUP BY word")
                 .print();
+
     }
+
 }

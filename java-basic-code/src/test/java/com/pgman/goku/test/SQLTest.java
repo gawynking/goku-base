@@ -26,7 +26,7 @@ public class SQLTest {
                 "where t1.local = 'yz'\n" +
                 ";";
 
-        SQLUtils.parseStatements(sql, "hive")
+        SQLUtils.parseStatements(sql, "hive");
         String sqlFormat = GokuSQLUtils.sqlFormat(sql);
         System.out.println(sqlFormat);
 
