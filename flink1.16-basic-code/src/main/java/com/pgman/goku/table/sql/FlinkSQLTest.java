@@ -18,21 +18,6 @@ public class FlinkSQLTest {
         StreamExecutionEnvironment executionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment();
         StreamTableEnvironment tableEnvironment = StreamTableEnvironment.create(executionEnvironment);
 
-        /**
-         * create table tbl_order(
-         *     json   string  comment '事件日志',
-         *     ts TIMESTAMP(3) METADATA FROM 'timestamp'
-         * ) with (
-         *     'connector' = 'kafka',
-         *     'topic' = 'order_topic',
-         *     'properties.bootstrap.servers' = 'localhost:9092',
-         *     'properties.group.id' = 'testGroup',
-         *     'scan.startup.mode' = 'earliest-offset',
-         *     'format' = 'json',
-         *      'json.fail-on-missing-field' = 'false',
-         *      'json.ignore-parse-errors' = 'true'
-         * )
-         */
         tableEnvironment.executeSql("create table tbl_order(\n" +
                 "    order_id            int       comment '订单ID',\n" +
                 "    shop_id             int       comment '书店ID',\n" +
@@ -58,5 +43,7 @@ public class FlinkSQLTest {
         executionEnvironment.execute();
 
     }
+
+
 
 }

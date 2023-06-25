@@ -5,7 +5,7 @@
 ## 项目涉及原始数据结构
 1 book_shop:
 ```sql
-create table book_shop(
+create table tbl_book_shop(
     shop_id        int    comment '书店ID',
     shop_name      string comment '书店名称',
     shop_address   string comment '书店地址',
@@ -24,7 +24,7 @@ create table book_shop(
 
 2 book:
 ```sql
-create table book(
+create table tbl_book(
     book_id        int      comment '图书ID',
     book_name      string   comment '图书名称',
     price          double   comment '图书售价',
@@ -39,7 +39,7 @@ create table book(
 
 3 user:
 ```sql
-create table user(
+create table tbl_user(
     user_id           int      comment '用户ID',
     user_name         string   comment '用户名称',
     sex               int      comment '性别',
@@ -54,7 +54,7 @@ create table user(
 
 4 order:
 ```sql
-create table order(
+create table tbl_order(
     order_id            int       comment '订单ID',
     shop_id             int       comment '书店ID',
     user_id             int       comment '用户ID',
@@ -67,7 +67,7 @@ create table order(
 
 5 order_detail:
 ```sql
-create table order_detail(
+create table tbl_order_detail(
     order_book_id           int      comment '订单明细ID',
     order_id                int      comment '订单ID',
     book_id                 int      comment '图书ID',

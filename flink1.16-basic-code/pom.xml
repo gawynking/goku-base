@@ -118,6 +118,14 @@
 <!--            <scope>provided</scope>-->
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-planner -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+            <scope>test</scope>
+        </dependency>
+
 
 
         <!-- ———————————————————————————————————————————————————————————— -->
@@ -169,7 +177,7 @@
 
 
         <!-- ———————————————————————————————————————————————————————————— -->
-        <!-- —————————————————————— Flink JDBC依赖 —————————————————————— -->
+        <!-- —————————————————————— Flink 外部依赖 ———————————————————————— -->
         <!-- ———————————————————————————————————————————————————————————— -->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -177,10 +185,6 @@
             <version>${flink.version}</version>
         </dependency>
 
-
-        <!-- ———————————————————————————————————————————————————————————— -->
-        <!-- —————————————————————— Flink Kafka依赖 —————————————————————— -->
-        <!-- ———————————————————————————————————————————————————————————— -->
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka -->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -195,6 +199,17 @@
         </dependency>
 
 
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- —————————————————————— Flink web依赖 ———————————————————————— -->
+        <!-- ———————————————————————————————————————————————————————————— -->
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-runtime-web -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-runtime-web</artifactId>
+            <version>${flink.version}</version>
+<!--            <scope>test</scope>-->
+        </dependency>
+
 
         <!-- ************************************************************ -->
         <!-- *********************** JDBC 依赖模块 ************************ -->
@@ -206,6 +221,25 @@
             <version>${mysql.jdbc.version}</version>
         </dependency>
 
+
+        <!-- ************************************************************ -->
+        <!-- ********************** log4j 依赖模块 *********************** -->
+        <!-- ************************************************************ -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-to-slf4j</artifactId>
+            <version>2.14.1</version>
+        </dependency>
 
 
         <!-- ************************************************************ -->
