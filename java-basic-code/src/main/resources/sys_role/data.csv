@@ -1,0 +1,6 @@
+role,permission
+admin,111111
+user,000011
+nobody,000000
+dev,000111
+test,001011

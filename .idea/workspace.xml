@@ -11,14 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/StreamDebugDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/table/sql/WordCountSQLExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/LinkedHashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/common/CdmColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/common/CdmTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/csv/CsvTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/csv/CsvTableFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/parser/CalciteSQLParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/schema/CustomSchema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite/validate/CalciteSQLValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/resources/model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/resources/sys_role/col_type.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basic-code/src/main/resources/sys_role/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/SocketWindowWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/stream/SocketWindowWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/table/sql/FlinkSQLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/table/sql/FlinkSQLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/SQLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic-code/src/test/java/com/pgman/goku/test/SQLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic-code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic-code/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/util/JSONUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/util/JSONUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +147,13 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -271,31 +279,31 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/chavinking/github/goku-base/flink1.16-basic-code/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chavinking/github/goku-base/java-basic-code/src/main/java/com/pgman/goku/calcite&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java-basic-code/src/main/java/com/pgman/goku/calcite" />
+      <recent name="$PROJECT_DIR$/java-basic-code/src/main/resources" />
       <recent name="$PROJECT_DIR$/flink1.16-basic-code/src/main/resources" />
       <recent name="$PROJECT_DIR$/mock-data-source/src/main/resources" />
       <recent name="E:\github\goku-base\dp-basic-code\src\main\java\com\pgman\goku\dp23" />
-      <recent name="E:\github\goku-base\dp-basic-code\src\main\java\com\pgman\goku\dp23\factory" />
-      <recent name="E:\github\goku-base\dp-basic-code\src\main\java\com\pgman\goku\dp23\singleton\type5" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pgman.goku.calcite.schema" />
       <recent name="com.pgman.goku.table.sql" />
       <recent name="com.pgman.goku.stream" />
       <recent name="com.pgman.goku.util" />
       <recent name="com.pgman.goku.config" />
-      <recent name="com.pgman.goku.generic.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FlinkSQLTest">
+  <component name="RunManager" selected="Application.CalciteSQLValidator">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -336,34 +344,6 @@
       <option name="TABLE_PARTITION" value="" />
       <option name="MAIN_CLASS" value="" />
       <option name="RECORD_LIMIT" value="100" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.15" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -450,111 +430,50 @@
       <module name="python" />
       <option name="studyTest" value="" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
@@ -587,13 +506,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlinkSQLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.table.sql.FlinkSQLTest" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="CalciteSQLParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.calcite.parser.CalciteSQLParser" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.table.sql.*" />
+          <option name="PATTERN" value="com.pgman.goku.calcite.parser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -601,13 +520,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.MockData" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="CalciteSQLValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.calcite.validate.CalciteSQLValidator" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.*" />
+          <option name="PATTERN" value="com.pgman.goku.calcite.validate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -615,41 +534,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocketWindowWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.SocketWindowWordCount" />
-      <module name="flink1.16-basic-code" />
+    <configuration name="CustomSchema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.calcite.schema.CustomSchema" />
+      <module name="java-basic-code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamDebugDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.stream.StreamDebugDemo" />
-      <module name="flink1.16-basic-code" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pgman.goku.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCountSQLExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.table.sql.WordCountSQLExample" />
-      <module name="flink1.16-basic-code" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pgman.goku.table.sql.*" />
+          <option name="PATTERN" value="com.pgman.goku.calcite.schema.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -663,8 +554,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomSchema.customSchema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-basic-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pgman.goku.calcite.schema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pgman.goku.calcite.schema" />
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.calcite.schema.CustomSchema" />
+      <option name="METHOD_NAME" value="customSchema" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testDdl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-basic-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pgman.goku.calcite.schema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pgman.goku.calcite.schema" />
+      <option name="MAIN_CLASS_NAME" value="com.pgman.goku.calcite.schema.test" />
+      <option name="METHOD_NAME" value="testDdl" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -675,6 +600,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="MySpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-basic-code" />
@@ -691,6 +637,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
     </configuration>
     <configuration name="project-travel-demo" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.15" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -848,20 +805,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.FlinkSQLTest" />
-      <item itemvalue="Application.WordCountSQLExample" />
-      <item itemvalue="Application.StreamDebugDemo (1)" />
-      <item itemvalue="Application.MockData" />
-      <item itemvalue="Application.SocketWindowWordCount" />
+      <item itemvalue="Application.com.pgman.goku.calcite.schema.CustomSchema" />
+      <item itemvalue="Application.CalciteSQLParser" />
+      <item itemvalue="Application.CalciteSQLValidator" />
+      <item itemvalue="JUnit.CustomSchema.customSchema" />
+      <item itemvalue="JUnit.test.testDdl" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FlinkSQLTest" />
-        <item itemvalue="Application.StreamDebugDemo (1)" />
-        <item itemvalue="Application.MockData" />
-        <item itemvalue="Application.WordCountSQLExample" />
-        <item itemvalue="Application.SocketWindowWordCount" />
+        <item itemvalue="Application.CalciteSQLValidator" />
+        <item itemvalue="Application.com.pgman.goku.calcite.schema.CustomSchema" />
+        <item itemvalue="JUnit.CustomSchema.customSchema" />
+        <item itemvalue="Application.CalciteSQLParser" />
+        <item itemvalue="JUnit.test.testDdl" />
       </list>
     </recent_temporary>
   </component>
@@ -1063,6 +1083,11 @@
           <url>jar:///opt/data/maven/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0-sources.jar!/org/apache/flink/streaming/runtime/tasks/StreamTask.java</url>
           <line>691</line>
           <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/flink1.16-basic-code/src/main/java/com/pgman/goku/table/sql/FlinkSQLTest.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -33,7 +33,8 @@
         <guava.version>28.2-jre</guava.version>
         <scala.version>2.11.8</scala.version>
         <kafka.version>2.0.0</kafka.version>
-        <calcite.version>1.20.0</calcite.version>
+        <calcite.version>1.26.0</calcite.version>
+        <avatica.version>1.20.0</avatica.version>
         <alibaba.druid.version>1.2.9</alibaba.druid.version>
         <org.apache.commons.version>3.9</org.apache.commons.version>
         <izern.sequence.version>1.0.0</izern.sequence.version>
@@ -50,6 +51,20 @@
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-core</artifactId>
             <version>${calcite.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-core -->
+        <dependency>
+            <groupId>org.apache.calcite</groupId>
+            <artifactId>calcite-server</artifactId>
+            <version>${calcite.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.calcite.avatica/avatica -->
+        <dependency>
+            <groupId>org.apache.calcite.avatica</groupId>
+            <artifactId>avatica</artifactId>
+            <version>${avatica.version}</version>
         </dependency>
 
 
@@ -79,6 +94,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -139,13 +161,6 @@
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams-scala_2.11</artifactId>
             <version>${kafka.version}</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.calcite/calcite-core -->
-        <dependency>
-            <groupId>org.apache.calcite</groupId>
-            <artifactId>calcite-core</artifactId>
-            <version>1.30.0</version>
         </dependency>
 
 

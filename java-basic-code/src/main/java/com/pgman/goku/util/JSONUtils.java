@@ -3,6 +3,8 @@ package com.pgman.goku.util;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -15,6 +17,14 @@ import java.util.Map;
 public class JSONUtils {
 
     private static final Logger logger = Logger.getLogger(JSONUtils.class);
+
+
+    public final static ObjectMapper JSON_MAPPER =
+            new ObjectMapper()
+                    .configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true)
+                    .configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES, true)
+                    .configure(JsonParser.Feature.ALLOW_COMMENTS, true);
+
 
     /**
      * 获得JSONObject实例化对象

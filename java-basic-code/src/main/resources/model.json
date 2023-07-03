@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "defaultSchema": "CSV",
+  "schemas": [
+    {
+      "name": "CSV",
+      "type": "map",
+      "tables": [
+        {
+          "name": "sys_role",
+          "type": "custom",
+          "factory": "com.pgman.goku.calcite.csv.CsvTableFactory",
+          "operand": {
+            "colPath": "/Users/chavinking/github/goku-base/java-basic-code/src/main/resources/sys_role/col_type.json",
+            "dataPath": "/Users/chavinking/github/goku-base/java-basic-code/src/main/resources/sys_role/data.csv"
+          }
+        }
+      ]
+    }
+  ]
+}
