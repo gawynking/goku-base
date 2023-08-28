@@ -10,17 +10,19 @@ public class OrderMapper {
     private double actualPrice;
     private double discountPrice;
 
+    private int orderStatus;
+
     private String createTime;
 
 
-
-    public OrderMapper(int orderId, int shopId, int userId, double originalPrice, double actualPrice, double discountPrice, String createTime) {
+    public OrderMapper(int orderId, int shopId, int userId, double originalPrice, double actualPrice, double discountPrice, int orderStatus, String createTime) {
         this.orderId = orderId;
         this.shopId = shopId;
         this.userId = userId;
         this.originalPrice = originalPrice;
         this.actualPrice = actualPrice;
         this.discountPrice = discountPrice;
+        this.orderStatus = orderStatus;
         this.createTime = createTime;
     }
 
@@ -80,6 +82,14 @@ public class OrderMapper {
         this.createTime = createTime;
     }
 
+    public int getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(int orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
     @Override
     public String toString() {
         return "OrderMapper{" +
@@ -89,7 +99,8 @@ public class OrderMapper {
                 ", originalPrice=" + originalPrice +
                 ", actualPrice=" + actualPrice +
                 ", discountPrice=" + discountPrice +
-                ", createDateTime='" + createTime + '\'' +
+                ", orderStatus=" + orderStatus +
+                ", createTime='" + createTime + '\'' +
                 '}';
     }
 }

@@ -3,6 +3,7 @@ package com.goku.producer;
 import com.goku.mapper.BookMapper;
 import com.goku.mapper.BookShopMapper;
 import com.goku.mapper.UserMapper;
+import com.goku.util.MysqlJDBCUtils;
 
 import java.util.List;
 
@@ -20,6 +21,13 @@ public class MockData {
     }
 
     public static void mockData(boolean orderedFlag,int sleepTime,int unOrderedNum){
+
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_order_payment",null);
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_order_detail",null);
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_order",null);
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_user",null);
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_book",null);
+        MysqlJDBCUtils.getInstance().executeUpdate("truncate table tbl_book_shop",null);
 
         List<BookShopMapper> bookShops = BookShopMapper.bookShops;
         List<BookMapper> books = BookMapper.books;
@@ -101,6 +109,20 @@ public class MockData {
                 try {
                     Thread.sleep(sleepTime*5);
                     new MockOrderData().mockOrder(orderedFlag,sleepTime,unOrderedNum);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }).start();
+
+
+        // 生产支付Order
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(sleepTime*5);
+                    new MockOrderPaymentData().mockOrderPayment(orderedFlag,sleepTime,unOrderedNum);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

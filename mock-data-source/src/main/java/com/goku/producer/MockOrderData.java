@@ -5,12 +5,54 @@ import com.goku.config.ConfigurationManager;
 import com.goku.mapper.*;
 import com.goku.util.DateUtils;
 import com.goku.util.KafkaUtils;
+import com.goku.util.MysqlJDBCUtils;
 import com.goku.util.ObjectUtils;
 
 import java.math.BigDecimal;
 import java.util.*;
 
 public class MockOrderData {
+
+    private static String orderCountSQL = "select count(1) as cnt from tbl_order where order_id = ?";
+    private static String orderInsertSQL = "insert into tbl_order(\n" +
+            "    order_id,\n" +
+            "    shop_id,\n" +
+            "    user_id,\n" +
+            "    original_price,\n" +
+            "    actual_price,\n" +
+            "    discount_price,\n" +
+            "    order_status,\n" +
+            "    create_time \n" +
+            ")value(\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?\n" +
+            ")";
+    private static String orderDetailCountSQL = "select count(1) as cnt from tbl_order_detail where order_book_id = ?";
+    private static String orderDetailInsertSQL = "insert into tbl_order_detail(\n" +
+            "    order_book_id,\n" +
+            "    order_id,\n" +
+            "    book_id,\n" +
+            "    book_number,\n" +
+            "    original_price,\n" +
+            "    actual_price,\n" +
+            "    discount_price,\n" +
+            "    create_time \n" +
+            ")value(\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?\n" +
+            ")";
 
     public static boolean cycleFlag = true;
 
@@ -28,6 +70,7 @@ public class MockOrderData {
         int shopId;
         int userId;
         String createDateTime;
+        int orderStatus = 1;
 
         int orderBookId = 0;
         int bookId;
@@ -93,6 +136,7 @@ public class MockOrderData {
                     originalPrice,
                     actualPrice,
                     discountPrice,
+                    orderStatus,
                     createDateTime
             ));
 
@@ -105,15 +149,48 @@ public class MockOrderData {
                 i++;
             } else {
                 i = 0;
+
                 if (orderedFlag) {
                     for (Order entry : cache) {
                         OrderMapper orderMapper1 = entry.getOrderMapper();
                         List<OrderDetailMapper> orderDetailMappers1 = entry.getOrderDetailMappers();
 
                         JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+                        if(!(MysqlJDBCUtils.getInstance().getCount(orderCountSQL,new Object[]{orderMapper1.getOrderId()}) > 0)) {
+                            MysqlJDBCUtils.getInstance().executeUpdate(
+                                    orderInsertSQL,
+                                    new Object[]{
+                                            orderMapper1.getOrderId(),
+                                            orderMapper1.getShopId(),
+                                            orderMapper1.getUserId(),
+                                            orderMapper1.getOriginalPrice(),
+                                            orderMapper1.getActualPrice(),
+                                            orderMapper1.getDiscountPrice(),
+                                            orderMapper1.getOrderStatus(),
+                                            orderMapper1.getCreateTime()
+                                    }
+                            );
+                        }
                         KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"),jsonOrder.toString());
                         for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
                             JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+
+                            if(!(MysqlJDBCUtils.getInstance().getCount(orderDetailCountSQL,new Object[]{orderDetailMapper.getOrderBookId()}) > 0)) {
+                                MysqlJDBCUtils.getInstance().executeUpdate(
+                                        orderDetailInsertSQL,
+                                        new Object[]{
+                                                orderDetailMapper.getOrderBookId(),
+                                                orderDetailMapper.getOrderId(),
+                                                orderDetailMapper.getBookId(),
+                                                orderDetailMapper.getBookNumber(),
+                                                orderDetailMapper.getOriginalPrice(),
+                                                orderDetailMapper.getActualPrice(),
+                                                orderDetailMapper.getDiscountPrice(),
+                                                orderDetailMapper.getCreateTime()
+                                        }
+                                );
+                            }
+
                             KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"),jsonOrderDetail.toString());
                         }
                     }
@@ -125,19 +202,79 @@ public class MockOrderData {
 
                         if(random.nextInt(99)%2==0) {
                             JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+                            if(!(MysqlJDBCUtils.getInstance().getCount(orderCountSQL,new Object[]{orderMapper1.getOrderId()}) > 0)) {
+                                MysqlJDBCUtils.getInstance().executeUpdate(
+                                        orderInsertSQL,
+                                        new Object[]{
+                                                orderMapper1.getOrderId(),
+                                                orderMapper1.getShopId(),
+                                                orderMapper1.getUserId(),
+                                                orderMapper1.getOriginalPrice(),
+                                                orderMapper1.getActualPrice(),
+                                                orderMapper1.getDiscountPrice(),
+                                                orderMapper1.getOrderStatus(),
+                                                orderMapper1.getCreateTime()
+                                        }
+                                );
+                            }
                             KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"), jsonOrder.toString());
 
                             for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
                                 JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+                                if(!(MysqlJDBCUtils.getInstance().getCount(orderDetailCountSQL,new Object[]{orderDetailMapper.getOrderBookId()}) > 0)) {
+                                    MysqlJDBCUtils.getInstance().executeUpdate(
+                                            orderDetailInsertSQL,
+                                            new Object[]{
+                                                    orderDetailMapper.getOrderBookId(),
+                                                    orderDetailMapper.getOrderId(),
+                                                    orderDetailMapper.getBookId(),
+                                                    orderDetailMapper.getBookNumber(),
+                                                    orderDetailMapper.getOriginalPrice(),
+                                                    orderDetailMapper.getActualPrice(),
+                                                    orderDetailMapper.getDiscountPrice(),
+                                                    orderDetailMapper.getCreateTime()
+                                            }
+                                    );
+                                }
                                 KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"), jsonOrderDetail.toString());
                             }
                         }else {
                             for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
                                 JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+                                if(!(MysqlJDBCUtils.getInstance().getCount(orderDetailCountSQL,new Object[]{orderDetailMapper.getOrderBookId()}) > 0)) {
+                                    MysqlJDBCUtils.getInstance().executeUpdate(
+                                            orderDetailInsertSQL,
+                                            new Object[]{
+                                                    orderDetailMapper.getOrderBookId(),
+                                                    orderDetailMapper.getOrderId(),
+                                                    orderDetailMapper.getBookId(),
+                                                    orderDetailMapper.getBookNumber(),
+                                                    orderDetailMapper.getOriginalPrice(),
+                                                    orderDetailMapper.getActualPrice(),
+                                                    orderDetailMapper.getDiscountPrice(),
+                                                    orderDetailMapper.getCreateTime()
+                                            }
+                                    );
+                                }
                                 KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"), jsonOrderDetail.toString());
                             }
 
                             JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+                            if(!(MysqlJDBCUtils.getInstance().getCount(orderCountSQL,new Object[]{orderMapper1.getOrderId()}) > 0)) {
+                                MysqlJDBCUtils.getInstance().executeUpdate(
+                                        orderInsertSQL,
+                                        new Object[]{
+                                                orderMapper1.getOrderId(),
+                                                orderMapper1.getShopId(),
+                                                orderMapper1.getUserId(),
+                                                orderMapper1.getOriginalPrice(),
+                                                orderMapper1.getActualPrice(),
+                                                orderMapper1.getDiscountPrice(),
+                                                orderMapper1.getOrderStatus(),
+                                                orderMapper1.getCreateTime()
+                                        }
+                                );
+                            }
                             KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"), jsonOrder.toString());
                         }
 
@@ -155,9 +292,39 @@ public class MockOrderData {
             List<OrderDetailMapper> orderDetailMappers1 = entry.getOrderDetailMappers();
 
             JSONObject jsonOrder = ObjectUtils.objInstanceToJsonObject(orderMapper1, OrderMapper.class);
+            if(!(MysqlJDBCUtils.getInstance().getCount(orderCountSQL,new Object[]{orderMapper1.getOrderId()}) > 0)) {
+                MysqlJDBCUtils.getInstance().executeUpdate(
+                        orderInsertSQL,
+                        new Object[]{
+                                orderMapper1.getOrderId(),
+                                orderMapper1.getShopId(),
+                                orderMapper1.getUserId(),
+                                orderMapper1.getOriginalPrice(),
+                                orderMapper1.getActualPrice(),
+                                orderMapper1.getDiscountPrice(),
+                                orderMapper1.getOrderStatus(),
+                                orderMapper1.getCreateTime()
+                        }
+                );
+            }
             KafkaUtils.getInstance().send(ConfigurationManager.getString("order.topics"),jsonOrder.toString());
             for (OrderDetailMapper orderDetailMapper : orderDetailMappers1) {
                 JSONObject jsonOrderDetail = ObjectUtils.objInstanceToJsonObject(orderDetailMapper, OrderDetailMapper.class);
+                if(!(MysqlJDBCUtils.getInstance().getCount(orderDetailCountSQL,new Object[]{orderDetailMapper.getOrderBookId()}) > 0)) {
+                    MysqlJDBCUtils.getInstance().executeUpdate(
+                            orderDetailInsertSQL,
+                            new Object[]{
+                                    orderDetailMapper.getOrderBookId(),
+                                    orderDetailMapper.getOrderId(),
+                                    orderDetailMapper.getBookId(),
+                                    orderDetailMapper.getBookNumber(),
+                                    orderDetailMapper.getOriginalPrice(),
+                                    orderDetailMapper.getActualPrice(),
+                                    orderDetailMapper.getDiscountPrice(),
+                                    orderDetailMapper.getCreateTime()
+                            }
+                    );
+                }
                 KafkaUtils.getInstance().send(ConfigurationManager.getString("order.book.topics"),jsonOrderDetail.toString());
             }
         }

@@ -5,11 +5,45 @@ import com.goku.config.ConfigurationManager;
 import com.goku.mapper.BookShopMapper;
 import com.goku.util.DateUtils;
 import com.goku.util.KafkaUtils;
+import com.goku.util.MysqlJDBCUtils;
 import com.goku.util.ObjectUtils;
 
 import java.util.*;
 
 public class MockBookShopData {
+
+    private static String countSQL = "select count(1) as cnt from tbl_book_shop where shop_id = ?";
+
+    private static String insertSQL = "insert into tbl_book_shop(\n" +
+            "    shop_id,\n" +
+            "    shop_name,\n" +
+            "    shop_address,\n" +
+            "    level_id,\n" +
+            "    level_name,\n" +
+            "    city_id,\n" +
+            "    city_name,\n" +
+            "    open_date,\n" +
+            "    brand_id,\n" +
+            "    brand_name,\n" +
+            "    manager_id,\n" +
+            "    manager_name,\n" +
+            "    create_time \n" +
+            ") value (\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?\n" +
+            ")";
+
 
     public static boolean cycleFlag = true;
     private static boolean testFlag = false;
@@ -116,26 +150,43 @@ public class MockBookShopData {
                 i++;
             } else {
                 i = 0;
-                if (orderedFlag) {
-                    for (BookShopMapper entry : cache) {
-                        if(testFlag){
-                            System.out.println(entry.toString());
-                        }else {
-                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
-                            KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
-                        }
-                    }
-                } else {
+                if (!orderedFlag) {
                     Collections.shuffle(cache);
-                    for (BookShopMapper entry : cache) {
-                        if(testFlag){
-                            System.out.println(entry.toString());
-                        }else {
-                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
-                            KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
+                }
+
+
+                for (BookShopMapper entry : cache) {
+                    if(testFlag){
+                        System.out.println(entry.toString());
+                    }else {
+                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
+
+//                        将数据写入外部存储
+                        if(!(MysqlJDBCUtils.getInstance().getCount(countSQL,new Object[]{entry.getShopId()}) > 0)) {
+                            MysqlJDBCUtils.getInstance().executeUpdate(
+                                    insertSQL,
+                                    new Object[]{
+                                            entry.getShopId(),
+                                            entry.getShopName(),
+                                            entry.getShopAddress(),
+                                            entry.getLevelId(),
+                                            entry.getLevelName(),
+                                            entry.getCityId(),
+                                            entry.getCityName(),
+                                            entry.getOpenDate(),
+                                            entry.getBrandId(),
+                                            entry.getBrandName(),
+                                            entry.getManagerId(),
+                                            entry.getManagerName(),
+                                            entry.getCreateTime()
+                                    }
+                            );
                         }
+
+                        KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
                     }
                 }
+
                 cache.clear();
                 cache.add(bookShop);
                 i++;
@@ -148,6 +199,29 @@ public class MockBookShopData {
                 System.out.println(entry.toString());
             }else {
                 JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, BookShopMapper.class);
+
+//                        将数据写入外部存储
+                if(!(MysqlJDBCUtils.getInstance().getCount(countSQL,new Object[]{entry.getShopId()}) > 0)) {
+                    MysqlJDBCUtils.getInstance().executeUpdate(
+                            insertSQL,
+                            new Object[]{
+                                    entry.getShopId(),
+                                    entry.getShopName(),
+                                    entry.getShopAddress(),
+                                    entry.getLevelId(),
+                                    entry.getLevelName(),
+                                    entry.getCityId(),
+                                    entry.getCityName(),
+                                    entry.getOpenDate(),
+                                    entry.getBrandId(),
+                                    entry.getBrandName(),
+                                    entry.getManagerId(),
+                                    entry.getManagerName(),
+                                    entry.getCreateTime()
+                            }
+                    );
+                }
+
                 KafkaUtils.getInstance().send(ConfigurationManager.getString("shop.topics"), jsonObject.toString());
             }
         }

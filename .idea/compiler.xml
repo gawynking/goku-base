@@ -22,6 +22,7 @@
         <module name="flink-basic-code" />
         <module name="tij4-basic-code" />
         <module name="dp-basic-code" />
+        <module name="flink117-basic-code" />
         <module name="ssm-basic-code" />
         <module name="front-basic-code" />
         <module name="springboot-basic-code" />

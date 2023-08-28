@@ -3,6 +3,7 @@ package com.goku.producer;
 import com.alibaba.fastjson.JSONObject;
 import com.goku.mapper.UserMapper;
 import com.goku.util.DateUtils;
+import com.goku.util.MysqlJDBCUtils;
 import com.goku.util.ObjectUtils;
 import com.goku.config.ConfigurationManager;
 import com.goku.util.KafkaUtils;
@@ -10,6 +11,31 @@ import com.goku.util.KafkaUtils;
 import java.util.*;
 
 public class MockUserData {
+
+    private static String countSQL = "select count(1) as cnt from tbl_user where user_id = ?";
+
+    private static String insertSQL = "insert into tbl_user(\n" +
+            "    user_id,\n" +
+            "    user_name,\n" +
+            "    sex,\n" +
+            "    account,\n" +
+            "    nick_name,\n" +
+            "    register_time,\n" +
+            "    city_id,\n" +
+            "    city_name,\n" +
+            "    crowd_type \n" +
+            ")value(\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?,\n" +
+            "    ?\n" +
+            ")";
+
 
     public static boolean cycleFlag = true;
     private static boolean testFlag = false;
@@ -83,26 +109,37 @@ public class MockUserData {
                 i++;
             }else {
                 i=0;
-                if(orderedFlag){
-                    for(UserMapper entry :cache){
-                        if(testFlag){
-                            System.out.println(entry.toString());
-                        }else {
-                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
-                            KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
-                        }
-                    }
-                }else {
+                if(!orderedFlag){
                     Collections.shuffle(cache);
-                    for(UserMapper entry :cache){
-                        if(testFlag){
-                            System.out.println(entry.toString());
-                        }else {
-                            JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
-                            KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
+                }
+
+                for(UserMapper entry :cache){
+                    if(testFlag){
+                        System.out.println(entry.toString());
+                    }else {
+                        JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
+
+//                        将数据写入外部存储
+                        if(!(MysqlJDBCUtils.getInstance().getCount(countSQL,new Object[]{entry.getUserId()}) > 0)) {
+                            MysqlJDBCUtils.getInstance().executeUpdate(
+                                    insertSQL,
+                                    new Object[]{
+                                            entry.getUserId(),
+                                            entry.getUserName(),
+                                            entry.getSex(),
+                                            entry.getAccount(),
+                                            entry.getNickName(),
+                                            entry.getRegisterTime(),
+                                            entry.getCityId(),
+                                            entry.getCityName(),
+                                            entry.getCrowdType()
+                                    }
+                            );
                         }
+                        KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
                     }
                 }
+
                 cache.clear();
                 cache.add(user);
                 i++;
@@ -115,6 +152,24 @@ public class MockUserData {
                 System.out.println(entry.toString());
             }else {
                 JSONObject jsonObject = ObjectUtils.objInstanceToJsonObject(entry, UserMapper.class);
+
+//                        将数据写入外部存储
+                if(!(MysqlJDBCUtils.getInstance().getCount(countSQL,new Object[]{entry.getUserId()}) > 0)) {
+                    MysqlJDBCUtils.getInstance().executeUpdate(
+                            insertSQL,
+                            new Object[]{
+                                    entry.getUserId(),
+                                    entry.getUserName(),
+                                    entry.getSex(),
+                                    entry.getAccount(),
+                                    entry.getNickName(),
+                                    entry.getRegisterTime(),
+                                    entry.getCityId(),
+                                    entry.getCityName(),
+                                    entry.getCrowdType()
+                            }
+                    );
+                }
                 KafkaUtils.getInstance().send(ConfigurationManager.getString("user.topics"), jsonObject.toString());
             }
         }
