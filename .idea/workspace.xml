@@ -11,33 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd21cd75-3855-4541-8d01-e53575209c5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/MockData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/FraudDetectionJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/FraudDetector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/extend/FraudDetectorFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/extend/FraudDetectorTemp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/table/SpendReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/java/com/goku/doc/table/UnimplementedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink117-basic-code/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/mapper/OrderPaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockOrderPaymentData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/util/MysqlJDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock-data-source/src/main/resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockBookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockBookData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockBookShopData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockBookShopData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockOrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockOrderData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/java/com/goku/producer/MockUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock-data-source/src/main/resources/mock.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mock-data-source/src/main/resources/mock.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,17 +260,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/chavinking/github/goku-base/mock-data-source/src/main/resources",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chavinking/github/goku-base/mock-data-source/src/main/resources&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mock-data-source/src/main/resources" />
