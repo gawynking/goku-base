@@ -1,4 +1,4 @@
-package com.pgman.goku;
+package com;
 
 import com.goku.util.MockDataUtils;
 
