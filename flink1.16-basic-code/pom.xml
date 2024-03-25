@@ -198,6 +198,14 @@
             <version>${flink.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.bahir/flink-connector-redis -->
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_2.12</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+
 
         <!-- ———————————————————————————————————————————————————————————— -->
         <!-- —————————————————————— Flink web依赖 ———————————————————————— -->
