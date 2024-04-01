@@ -55,6 +55,7 @@ public class JedisUtil {
 
     public HyperLogLog HYPERLOGLOG = new HyperLogLog();
 
+    public Bitmap BITMAP = new Bitmap();
 
     private static JedisPool jedisPool = null;
 
@@ -92,6 +93,11 @@ public class JedisUtil {
         return jedisPool.getResource();
     }
 
+    public Jedis getJedis(int db) {
+        Jedis jedis = getJedis();
+        jedis.select(db);
+        return jedis;
+    }
 
     private static final JedisUtil jedisUtil = new JedisUtil();
 
@@ -306,6 +312,20 @@ public class JedisUtil {
             Set<String> set = jedis.keys(pattern);
             returnJedis(jedis);
             return set;
+        }
+
+        /**
+         * 清楚所有匹配key数据
+         *
+         * @param pattern
+         */
+        public void flushKeys(String pattern){
+            Jedis jedis = getJedis();
+            Set<String> sets = jedis.keys(pattern);
+            for(String key:sets){
+                del(key);
+            }
+            returnJedis(jedis);
         }
     }
 
@@ -1246,6 +1266,54 @@ public class JedisUtil {
             returnJedis(jedis);
             return pfmerge;
         }
+
+    }
+
+
+    public class Bitmap {
+        /**
+         * 设置key对应的offset为true
+         *
+         * @param key
+         * @param offset
+         * @param b
+         * @return
+         */
+        public Boolean setBit(String key, Long offset, boolean b){
+            Jedis jedis = getJedis();
+            Boolean setbit = jedis.setbit(key, offset, true);
+            returnJedis(jedis);
+            return setbit;
+        }
+
+
+        /**
+         * 获取key对应位移是否设置
+         *
+         * @param key
+         * @param offset
+         * @return
+         */
+        public Boolean getBit(String key,Long offset){
+            Jedis jedis = getJedis();
+            Boolean getbit = jedis.getbit(key, offset);
+            returnJedis(jedis);
+            return getbit;
+        }
+
+        /**
+         * 获取key对应的计数
+         *
+         * @param key
+         * @return
+         */
+        public Long bitCount(String key){
+            Jedis jedis = getJedis();
+            Long bitcount = jedis.bitcount(key);
+            returnJedis(jedis);
+            return bitcount;
+        }
+
 
     }
 

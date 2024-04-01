@@ -28,19 +28,43 @@ public class RedisCacheDemo {
     public void test01(){
         jedisUtil.KEYS.flushAll();
 
-        Map map = new HashMap<String,String>();
-        map.put("user_name","gawynking");
-        map.put("birthday","1990-03-15");
-        map.put("job","总统");
+        Map map1 = new HashMap<String,String>();
+        map1.put("user_name","gawynking");
+        map1.put("birthday","1990-03-15");
+        map1.put("job","总统");
 
-        jedisUtil.HASHS.hmset("1",map);
+        jedisUtil.HASHS.hmset("a1",map1);
 
-        Map<String, String> stringStringMap = jedisUtil.HASHS.hgetAll("1");
+        Map map2 = new HashMap<String,String>();
+        map2.put("user_name","gawynking1");
+        map2.put("birthday","1990-03-16");
+        map2.put("job","主席");
+
+        jedisUtil.HASHS.hmset("a2",map2);
+
+        Map<String, String> stringStringMap = jedisUtil.HASHS.hgetAll("a1");
         System.out.println(stringStringMap);
 
         String job = jedisUtil.HASHS.hget("1", "job");
         System.out.println(job);
+
+
+
+        Set<String> as = jedisUtil.KEYS.keys("a*");
+        for(String a: as){
+            System.out.println("---------- : " + a);
+        }
+
+        jedisUtil.KEYS.flushKeys("a*");
+
+        as = jedisUtil.KEYS.keys("a*");
+        for(String a: as){
+            System.out.println("---------- : " + a);
+        }
+
     }
+
+
 
     @Test
     public void test02(){
