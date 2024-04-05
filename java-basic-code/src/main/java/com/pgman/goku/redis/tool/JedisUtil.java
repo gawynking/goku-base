@@ -2,15 +2,16 @@ package com.pgman.goku.redis.tool;
 
 import com.pgman.goku.redis.config.JRedisPoolConfig;
 import org.apache.log4j.Logger;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-import redis.clients.jedis.SortingParams;
+import org.redisson.Redisson;
+import org.redisson.api.RLock;
+import org.redisson.config.Config;
+import redis.clients.jedis.*;
 import redis.clients.jedis.util.SafeEncoder;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 
 public class JedisUtil {
@@ -57,6 +58,8 @@ public class JedisUtil {
 
     public Bitmap BITMAP = new Bitmap();
 
+    public Tool TOOL = new Tool();
+
     private static JedisPool jedisPool = null;
 
     static {
@@ -81,6 +84,14 @@ public class JedisUtil {
         );
 
     }
+
+    public static Redisson getRedisson(){
+        Config config = new Config();
+        config.useSingleServer().setAddress("redis://localhost:6379").setDatabase(0);
+//        config.setLockWatchdogTimeout(30000);
+        return (Redisson) Redisson.create(config);
+    }
+
 
     public JedisPool getPool() {
         return jedisPool;
@@ -116,6 +127,41 @@ public class JedisUtil {
         jedisPool.returnResource(jedis);
     }
 
+
+    //******************************************* other *******************************************//
+    public class Tool{
+
+        /**
+         * 为离散值生成序列化的ID序列
+         *
+         * @param key
+         * @param value
+         * @return
+         */
+        public Long generateUniqueSequence(String key,String value){
+            Redisson redisson = getRedisson();
+            RLock lock = redisson.getLock("Lock:"+key);
+            Long rank = -1L;
+            try {
+                rank = SORTSETS.zrank(key, value);
+                if (rank != -1) {
+                    return rank;
+                } else {
+                    boolean isLocked = lock.tryLock(10, 10, java.util.concurrent.TimeUnit.SECONDS);
+                    if(isLocked){
+                        rank = SORTSETS.zcard(key);
+                        SORTSETS.zadd(key, rank, value);
+                    }
+                }
+            }catch (InterruptedException e){}finally {
+                lock.unlock();
+            }
+            return rank;
+        }
+
+
+
+    }
 
     //*******************************************Keys*******************************************//
     public class Keys {
@@ -945,11 +991,29 @@ public class JedisUtil {
          * 获取指定值在集合中的位置，集合排序从低到高
          */
         public long zrank(String key, String member) {
-            Jedis sjedis = getJedis();
-            long index = sjedis.zrank(key, member);
-            returnJedis(sjedis);
+            Jedis jedis = getJedis();
+            long index = -1;
+            try {
+                index = jedis.zrank(key, member);
+            }catch (Exception e){}
+            returnJedis(jedis);
             return index;
         }
+
+        /**
+         * 返回有序集合
+         *
+         * @param key
+         * @return
+         */
+        public List<Tuple> zscan(String key){
+            Jedis jedis = getJedis();
+            ScanResult<Tuple> zscan = jedis.zscan(key, "0");
+            List<Tuple> result = zscan.getResult();
+            returnJedis(jedis);
+            return result;
+        }
+
 
         /**
          * 获取指定值在集合中的位置，集合排序从高到低
