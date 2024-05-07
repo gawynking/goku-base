@@ -179,6 +179,13 @@
             <version>3.7.0</version>
         </dependency>
 
+        <!-- RoaringBitmap 依赖 -->
+        <dependency>
+            <groupId>org.roaringbitmap</groupId>
+            <artifactId>RoaringBitmap</artifactId>
+            <version>0.9.13</version>
+        </dependency>
+
 
     </dependencies>
 

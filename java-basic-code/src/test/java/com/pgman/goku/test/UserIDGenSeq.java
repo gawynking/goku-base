@@ -27,6 +27,7 @@ public class UserIDGenSeq {
         jedisUtil.TOOL.generateUniqueSequence("sortset:gawyn:01","999");
         jedisUtil.TOOL.generateUniqueSequence("sortset:gawyn:01","666");
 
+
         // 遍历有序集合
         List<Tuple> tuples = jedisUtil.SORTSETS.zscan("sortset:gawyn:01");
         int i = 0;

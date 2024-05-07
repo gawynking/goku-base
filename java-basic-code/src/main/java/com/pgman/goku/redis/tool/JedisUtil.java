@@ -23,6 +23,8 @@ public class JedisUtil {
      */
     private final int expire = 60000;
 
+    public static Redisson redisson;
+
     /**
      * 操作Key的方法
      */
@@ -89,9 +91,15 @@ public class JedisUtil {
         Config config = new Config();
         config.useSingleServer().setAddress("redis://localhost:6379").setDatabase(0);
 //        config.setLockWatchdogTimeout(30000);
-        return (Redisson) Redisson.create(config);
+        redisson = (Redisson) Redisson.create(config);
+        return redisson;
     }
 
+//    static{
+//        Runtime.getRuntime().addShutdownHook(new Thread(()->{
+//            redisson.shutdown();
+//        }));
+//    }
 
     public JedisPool getPool() {
         return jedisPool;
